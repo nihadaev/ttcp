@@ -5,17 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TTCP</title>
     <link rel="stylesheet" href="css/style.css">
-    <title>Document</title>
-
-    <!-- Font Awesome -->
-   <link rel="stylesheet" href="assets/font-awesome/css/font-awesome.min.css">
-    <!--Summernote css-->
-    <link rel="stylesheet" href="assets/summernote/summernote.css">
-    <!-- End page Label Plugins -->
-
-    <!-- Bootstrap -->
-    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
 </head>
 
 <body>
@@ -47,7 +38,7 @@
                             <li><a href="#">E-bülten</a></li>
                         </ul>
                     </li>
-                    <li><a href="/">Xəbərlər</a></li>
+                    <li><a href="news.html">Xəbərlər</a></li>
                     <li class="has-dropdown"><a href="/">Haqqımızda</a>
                         <div class="kvadrat"></div>
                         <ul class="mydropdown">
@@ -77,35 +68,8 @@
                         <option value="">AZ</option>
                     </select>
                 </li>
-                <li class="header-login"><a href="authorization.html" class="login">Giriş</a></li>
-                <li class="header-signup"><a href="signup.html" class="signup">Qeydiyyat</a></li>
-
-                <li class="header-profile has-dropdown">
-                    <ul class="header-userinfo">
-                        <li>
-                            <p> <span id="header-username"> Rashad </span> <br> <span id="header-usersurname">
-                                    Abdullayev </span>
-                            </p>
-                        </li>
-                        <li><a href="#">
-                                <img src="img/header-profile.png" alt="">
-                            </a></li>
-                    </ul>
-
-                    <ul class="mydropdown">
-                        <li><a href="userinfo.html">Profil məlumatlarım</a></li>
-                        <li><a href="profilepatent.html">Patent və ixtiralarım</a></li>
-                        <li><a href="#">İdeyalarım</a></li>
-                        <li><a href="#">İnvestor olduqlarım</a></li>
-                        <li><a href="#">Start Up’larım</a></li>
-                        <li><a href="#">Araşdırma mövzularım</a></li>
-                        <li><a href="#">Startap (İnkubasiya)</a></li>
-                        <li><a href="#">Tətbiq yönümlü hazır
-                                tədqiqatlarım</a></li>
-                        <li class="mailbox"><a href="#">Mailbox <span class="messages-count">1</span> </a></li>
-                        <li><a href="#">Çıxış</a></li>
-                    </ul>
-                </li>
+                <li><a href="authorization.html" class="login">Giriş</a></li>
+                <li><a href="signup.html" class="signup">Qeydiyyat</a></li>
             </ul>
             <!-- LANGUAGE, LOGIN, SELECT, SIGN UP SIDE-->
 
@@ -127,141 +91,274 @@
             <li><a href="#">Qeydiyyat</a></li>
         </ul>
     </header>
+
+
     <!-- HEADER SIDE  END-->
 
-    <!-- new patent section -->
-    <section class="new-patent-page mywrapper">
-        <!-- profile links -->
-        <div class="page-link-heading ">
-            <!-- links -->
-            <p> <a href="#">Profile</a> <span><svg width="7" height="13" viewBox="0 0 7 13" fill="none"
-                        xmlns="http://www.w3.org/2000/svg">
-                        <path
-                            d="M0.180905 12.8158C-0.0383737 12.5924 -0.0583081 12.243 0.121101 11.9967L0.180905 11.9262L5.50859 6.5L0.180905 1.07382C-0.0383737 0.850505 -0.0583081 0.501045 0.121101 0.25479L0.180905 0.18424C0.400183 -0.0390806 0.743318 -0.0593824 0.985116 0.123334L1.05439 0.18424L6.8191 6.05521C7.03837 6.27853 7.05831 6.62799 6.8789 6.87424L6.8191 6.94479L1.05439 12.8158C0.813183 13.0614 0.422111 13.0614 0.180905 12.8158Z"
-                            fill="#4C4C4C" />
-                    </svg>
-                </span> <a href="profilepatent.html">Patent və ixtiralarım</a> <span><svg width="7" height="13"
-                        viewBox="0 0 7 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path
-                            d="M0.180905 12.8158C-0.0383737 12.5924 -0.0583081 12.243 0.121101 11.9967L0.180905 11.9262L5.50859 6.5L0.180905 1.07382C-0.0383737 0.850505 -0.0583081 0.501045 0.121101 0.25479L0.180905 0.18424C0.400183 -0.0390806 0.743318 -0.0593824 0.985116 0.123334L1.05439 0.18424L6.8191 6.05521C7.03837 6.27853 7.05831 6.62799 6.8789 6.87424L6.8191 6.94479L1.05439 12.8158C0.813183 13.0614 0.422111 13.0614 0.180905 12.8158Z"
-                            fill="#4C4C4C" />
-                    </svg>
-                </span> <a href="newpatent.html">Yeni</a> </p>
-            <!-- links end -->
+    <!-- News page -->
+    <section class="news-page mywrapper">
+        <!-- news pagee head -->
+        <div class="news-page-heading">
+            <h2 class="headingh2"> Xəbərlər </h2>
         </div>
-        <!-- profile links end -->
+        <!-- news page body -->
+        <div class="news-page-body">
+            <!-- news page body content -->
+            <div class="news-page-body-cards">
+                <!-- news- cards and goint to detail page -->
+                <a href="news-detail.html" class="news-page-body-card">
+                    <!-- card with no hover -->
+                    <div class="news-page-body-start-card">
+                        <img src="img/news1.png" alt="">
+                        <h3>Lorem ipsum</h3>
+                    </div>
 
-        <!-- new patent form -->
-        <div class="new-patent-form">
-            <!-- new patent form -->
-            <form>
-                <!-- patent name -->
-                <label> Ad
-                    <input type="text" id="patent-name">
-                </label>
-                <!-- patent name end -->
+                    <!-- card with hover -->
+                    <div class="news-page-end-card  mycard">
+                        <div class="news-page-end-card-img mycard-img">
+                            <img src="img/latenewscard1.png" alt="news">
+                        </div>
+                        <div class=" news-page-end-card-body mycard-body">
+                            <div class="mycard-text ">
+                                <h3>Lorem ipsum.</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu
+                                    turpis
+                                    molestie, dictum
+                                    est a, mattis tellus. Sed dignissim, metus nec fringilla accumsan,
+                                    risus
+                                    sem
+                                    sollicitudin lacus, ut interdum tellus elit sed</p>
+                                <span class="etrafli">Ətraflı</span>
+                            </div>
+                        </div>
 
-                <!-- patent category -->
-                <label> Kateqoriya
-                    <input type="text" id="patent-category">
-                </label>
-                <!-- patent category end -->
+                        <div class="mycard-foot">
+                            <h4>21.05.2022</h4>
+                        </div>
+                    </div>
+                </a>
+                <a href="news-detail.html" class="news-page-body-card">
+                    <!-- card with no hover -->
+                    <div class="news-page-body-start-card">
+                        <img src="img/news1.png" alt="">
+                        <h3>Lorem ipsum</h3>
+                    </div>
 
-                <!-- patent content -->
-                <label class="patent-content-label"> Məzmun
-                    <input type="text" id="patent-content">
-                </label>
-                <!-- patent content end -->
+                    <!-- card with hover -->
+                    <div class="news-page-end-card  mycard">
+                        <div class="news-page-end-card-img mycard-img">
+                            <img src="img/latenewscard1.png" alt="news">
+                        </div>
+                        <div class=" news-page-end-card-body mycard-body">
+                            <div class="mycard-text ">
+                                <h3>Lorem ipsum.</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu
+                                    turpis
+                                    molestie, dictum
+                                    est a, mattis tellus. Sed dignissim, metus nec fringilla accumsan,
+                                    risus
+                                    sem
+                                    sollicitudin lacus, ut interdum tellus elit sed</p>
+                                <span class="etrafli">Ətraflı</span>
+                            </div>
+                        </div>
 
+                        <div class="mycard-foot">
+                            <h4>21.05.2022</h4>
+                        </div>
+                    </div>
+                </a>
+                <a href="news-detail.html" class="news-page-body-card">
+                    <!-- card with no hover -->
+                    <div class="news-page-body-start-card">
+                        <img src="img/news1.png" alt="">
+                        <h3>Lorem ipsum</h3>
+                    </div>
 
-                <div class="patent-mobile-email">
-                    <!-- patent host email -->
-                    <label> E-mail
-                        <input type="text" id="patent-host-email">
-                    </label>
-                    <!-- paten host email end -->
+                    <!-- card with hover -->
+                    <div class="news-page-end-card  mycard">
+                        <div class="news-page-end-card-img mycard-img">
+                            <img src="img/latenewscard1.png" alt="news">
+                        </div>
+                        <div class=" news-page-end-card-body mycard-body">
+                            <div class="mycard-text ">
+                                <h3>Lorem ipsum.</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu
+                                    turpis
+                                    molestie, dictum
+                                    est a, mattis tellus. Sed dignissim, metus nec fringilla accumsan,
+                                    risus
+                                    sem
+                                    sollicitudin lacus, ut interdum tellus elit sed</p>
+                                <span class="etrafli">Ətraflı</span>
+                            </div>
+                        </div>
 
-                    <!-- patent host mobile number -->
-                    <label> Mobil nömrə
-                        <input type="text" id="patent-host-number">
-                    </label>
-                    <!-- patent host mobile number end -->
+                        <div class="mycard-foot">
+                            <h4>21.05.2022</h4>
+                        </div>
+                    </div>
+                </a>
+                <a href="news-detail.html" class="news-page-body-card">
+                    <!-- card with no hover -->
+                    <div class="news-page-body-start-card">
+                        <img src="img/news1.png" alt="">
+                        <h3>Lorem ipsum</h3>
+                    </div>
 
-                    <!-- patent images and files -->
-                    <label class="file-label">
-                        Şəkil
-                        <input type="file">
-                        <svg width="19" height="20" viewBox="0 0 19 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path
-                                d="M13.411 0.833008C16.5821 0.833008 18.7124 3.01294 18.7124 6.25667V13.7427C18.7124 16.9864 16.5821 19.1663 13.4101 19.1663H5.3014C2.13031 19.1663 0 16.9864 0 13.7427V6.25667C0 3.01294 2.13031 0.833008 5.3014 0.833008H13.411ZM14.4428 10.5039C13.4399 9.89089 12.6656 10.7517 12.4567 11.027C12.2554 11.2928 12.0822 11.5861 11.8997 11.8794C11.4538 12.603 10.9429 13.4374 10.0585 13.9227C8.77331 14.6199 7.79766 13.9776 7.0958 13.5103C6.83236 13.3362 6.57645 13.1716 6.32149 13.0619C5.693 12.796 5.12756 13.0987 4.28833 14.1431C3.84802 14.689 3.41147 15.2301 2.96927 15.7693C2.7049 16.0919 2.76793 16.5895 3.12451 16.8051C3.69372 17.1485 4.38806 17.333 5.17272 17.333H13.0579C13.5029 17.333 13.9489 17.2734 14.3741 17.1372C15.3319 16.8307 16.0921 16.1288 16.4891 15.2017C16.8241 14.4222 16.9868 13.4762 16.6735 12.6891C16.5691 12.428 16.4129 12.1849 16.1937 11.9711C15.6189 11.412 15.0816 10.8899 14.4428 10.5039ZM6.08047 4.49967C4.79058 4.49967 3.74249 5.52793 3.74249 6.79134C3.74249 8.05476 4.79058 9.08301 6.08047 9.08301C7.36942 9.08301 8.41846 8.05476 8.41846 6.79134C8.41846 5.52793 7.36942 4.49967 6.08047 4.49967Z"
-                                fill="#256EB9" />
-                        </svg>
+                    <!-- card with hover -->
+                    <div class="news-page-end-card  mycard">
+                        <div class="news-page-end-card-img mycard-img">
+                            <img src="img/latenewscard1.png" alt="news">
+                        </div>
+                        <div class=" news-page-end-card-body mycard-body">
+                            <div class="mycard-text ">
+                                <h3>Lorem ipsum.</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu
+                                    turpis
+                                    molestie, dictum
+                                    est a, mattis tellus. Sed dignissim, metus nec fringilla accumsan,
+                                    risus
+                                    sem
+                                    sollicitudin lacus, ut interdum tellus elit sed</p>
+                                <span class="etrafli">Ətraflı</span>
+                            </div>
+                        </div>
 
+                        <div class="mycard-foot">
+                            <h4>21.05.2022</h4>
+                        </div>
+                    </div>
+                </a>
+                <a href="news-detail.html" class="news-page-body-card">
+                    <!-- card with no hover -->
+                    <div class="news-page-body-start-card">
+                        <img src="img/news1.png" alt="">
+                        <h3>Lorem ipsum</h3>
+                    </div>
 
-                    </label>
+                    <!-- card with hover -->
+                    <div class="news-page-end-card  mycard">
+                        <div class="news-page-end-card-img mycard-img">
+                            <img src="img/latenewscard1.png" alt="news">
+                        </div>
+                        <div class=" news-page-end-card-body mycard-body">
+                            <div class="mycard-text ">
+                                <h3>Lorem ipsum.</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu
+                                    turpis
+                                    molestie, dictum
+                                    est a, mattis tellus. Sed dignissim, metus nec fringilla accumsan,
+                                    risus
+                                    sem
+                                    sollicitudin lacus, ut interdum tellus elit sed</p>
+                                <span class="etrafli">Ətraflı</span>
+                            </div>
+                        </div>
 
-                    <label class="file-label">
-                        Sənədlər
-                        <input type="file">
-                        <svg width="19" height="20" viewBox="0 0 19 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path
-                                d="M6.61562 0.833159C7.45032 0.824149 8.22942 1.21832 8.74046 1.88748L9.52942 2.95998C9.78046 3.28082 10.157 3.47332 10.5605 3.47332H13.3129C16.6212 3.47332 18.235 5.27915 18.226 8.98248V13.4466C18.226 16.985 16.0922 19.1666 12.6225 19.1666H5.88942C2.43769 19.1666 0.294922 16.985 0.294922 13.4375V6.55332C0.294922 2.75832 1.94458 0.833159 5.19907 0.833159H6.61562ZM13.4115 11.6408H5.10942C4.73286 11.6408 4.437 11.9433 4.437 12.3283C4.437 12.7041 4.73286 13.0158 5.10942 13.0158H13.4115C13.7791 13.0158 14.075 12.7041 14.075 12.3283C14.075 11.9433 13.7791 11.6408 13.4115 11.6408Z"
-                                fill="#256EB9" />
-                        </svg>
+                        <div class="mycard-foot">
+                            <h4>21.05.2022</h4>
+                        </div>
+                    </div>
+                </a>
+                <a href="news-detail.html" class="news-page-body-card">
+                    <!-- card with no hover -->
+                    <div class="news-page-body-start-card">
+                        <img src="img/news1.png" alt="">
+                        <h3>Lorem ipsum</h3>
+                    </div>
 
+                    <!-- card with hover -->
+                    <div class="news-page-end-card  mycard">
+                        <div class="news-page-end-card-img mycard-img">
+                            <img src="img/latenewscard1.png" alt="news">
+                        </div>
+                        <div class=" news-page-end-card-body mycard-body">
+                            <div class="mycard-text ">
+                                <h3>Lorem ipsum.</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu
+                                    turpis
+                                    molestie, dictum
+                                    est a, mattis tellus. Sed dignissim, metus nec fringilla accumsan,
+                                    risus
+                                    sem
+                                    sollicitudin lacus, ut interdum tellus elit sed</p>
+                                <span class="etrafli">Ətraflı</span>
+                            </div>
+                        </div>
 
+                        <div class="mycard-foot">
+                            <h4>21.05.2022</h4>
+                        </div>
+                    </div>
+                </a>
+                <a href="news-detail.html" class="news-page-body-card">
+                    <!-- card with no hover -->
+                    <div class="news-page-body-start-card">
+                        <img src="img/news1.png" alt="">
+                        <h3>Lorem ipsum</h3>
+                    </div>
 
-                    </label>
+                    <!-- card with hover -->
+                    <div class="news-page-end-card  mycard">
+                        <div class="news-page-end-card-img mycard-img">
+                            <img src="img/latenewscard1.png" alt="news">
+                        </div>
+                        <div class=" news-page-end-card-body mycard-body">
+                            <div class="mycard-text ">
+                                <h3>Lorem ipsum.</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu
+                                    turpis
+                                    molestie, dictum
+                                    est a, mattis tellus. Sed dignissim, metus nec fringilla accumsan,
+                                    risus
+                                    sem
+                                    sollicitudin lacus, ut interdum tellus elit sed</p>
+                                <span class="etrafli">Ətraflı</span>
+                            </div>
+                        </div>
 
-                    <label class="file-label">
-                        Sənədlər
-                        <input type="file">
-                        <svg width="19" height="20" viewBox="0 0 19 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path
-                                d="M6.61562 0.833159C7.45032 0.824149 8.22942 1.21832 8.74046 1.88748L9.52942 2.95998C9.78046 3.28082 10.157 3.47332 10.5605 3.47332H13.3129C16.6212 3.47332 18.235 5.27915 18.226 8.98248V13.4466C18.226 16.985 16.0922 19.1666 12.6225 19.1666H5.88942C2.43769 19.1666 0.294922 16.985 0.294922 13.4375V6.55332C0.294922 2.75832 1.94458 0.833159 5.19907 0.833159H6.61562ZM13.4115 11.6408H5.10942C4.73286 11.6408 4.437 11.9433 4.437 12.3283C4.437 12.7041 4.73286 13.0158 5.10942 13.0158H13.4115C13.7791 13.0158 14.075 12.7041 14.075 12.3283C14.075 11.9433 13.7791 11.6408 13.4115 11.6408Z"
-                                fill="#256EB9" />
-                        </svg>
+                        <div class="mycard-foot">
+                            <h4>21.05.2022</h4>
+                        </div>
+                    </div>
+                </a>
+                <a href="news-detail.html" class="news-page-body-card">
+                    <!-- card with no hover -->
+                    <div class="news-page-body-start-card">
+                        <img src="img/news1.png" alt="">
+                        <h3>Lorem ipsum</h3>
+                    </div>
 
+                    <!-- card with hover -->
+                    <div class="news-page-end-card  mycard">
+                        <div class="news-page-end-card-img mycard-img">
+                            <img src="img/latenewscard1.png" alt="news">
+                        </div>
+                        <div class=" news-page-end-card-body mycard-body">
+                            <div class="mycard-text ">
+                                <h3>Lorem ipsum.</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu
+                                    turpis
+                                    molestie, dictum
+                                    est a, mattis tellus. Sed dignissim, metus nec fringilla accumsan,
+                                    risus
+                                    sem
+                                    sollicitudin lacus, ut interdum tellus elit sed</p>
+                                <span class="etrafli">Ətraflı</span>
+                            </div>
+                        </div>
 
-
-                    </label>
-
-                    <label class="file-label">
-                        Sənədlər
-                        <input type="file">
-                        <svg width="19" height="20" viewBox="0 0 19 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path
-                                d="M6.61562 0.833159C7.45032 0.824149 8.22942 1.21832 8.74046 1.88748L9.52942 2.95998C9.78046 3.28082 10.157 3.47332 10.5605 3.47332H13.3129C16.6212 3.47332 18.235 5.27915 18.226 8.98248V13.4466C18.226 16.985 16.0922 19.1666 12.6225 19.1666H5.88942C2.43769 19.1666 0.294922 16.985 0.294922 13.4375V6.55332C0.294922 2.75832 1.94458 0.833159 5.19907 0.833159H6.61562ZM13.4115 11.6408H5.10942C4.73286 11.6408 4.437 11.9433 4.437 12.3283C4.437 12.7041 4.73286 13.0158 5.10942 13.0158H13.4115C13.7791 13.0158 14.075 12.7041 14.075 12.3283C14.075 11.9433 13.7791 11.6408 13.4115 11.6408Z"
-                                fill="#256EB9" />
-                        </svg>
-
-
-
-                    </label>
-
-                    <!-- patent images and file -->
-                </div>
-
-                <!--  patent detailed content -->
-                <div class="new-patent-content-detailed">
-                    <label> Detallı məlumat
-                        <textarea id="summernote"></textarea>
-                    </label>
-                </div>
-                <!-- patent detailed content end -->
-
-                <div class="new-patent-form-submit-buttons">
-                    <button class="new-patent-save">Yadda saxla</button>
-                    <button class="new-patent-add">Əlavə et</button>
-                </div>
-            </form>
-            <!-- new patent form end -->
+                        <div class="mycard-foot">
+                            <h4>21.05.2022</h4>
+                        </div>
+                    </div>
+                </a>
+            </div>
         </div>
-        <!-- new patent form end -->
-
 
     </section>
-    <!-- new patent section end -->
+
 
     <!-- FOOTER SIDE -->
     <footer>
@@ -335,10 +432,10 @@
 
             <div class="footer-lang">
                 <h3>Dil</h3>
-                <ul class="select-lang-footer">
+                <ul>
                     <li>
-                        <h2> Azərbaycan dili </h2> <span class="open-select-lang-footer"> <svg width="9" height="5"
-                                viewBox="0 0 9 5" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <h2> Azərbaycan dili </h2> <span> <svg width="9" height="5" viewBox="0 0 9 5" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
                                 <path
                                     d="M0.12755 0.129218C0.282157 -0.0274098 0.52409 -0.0416487 0.694575 0.086501L0.743417 0.129218L4.5 3.93471L8.25658 0.129218C8.41119 -0.0274098 8.65312 -0.0416487 8.82361 0.086501L8.87245 0.129218C9.02706 0.285845 9.04111 0.530941 8.91461 0.703654L8.87245 0.753135L4.80793 4.87078C4.65333 5.02741 4.41139 5.04165 4.24091 4.9135L4.19207 4.87078L0.12755 0.753135C-0.0425168 0.580845 -0.0425168 0.301508 0.12755 0.129218Z"
                                     fill="white" />
@@ -389,23 +486,6 @@
         </div>
     </footer>
     <!-- FOOTER SIDE END -->
-
-    <!-- JQuery -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-   <!-- Bootstrap -->
-    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
-    
-    
-    <!-- Summernote -->
-    
-    <script src="assets/summernote/summernote.js"></script>
-
-    <script >
-        $('#summernote').summernote()
-
-    </script>
-
-    
 
 </body>
 
