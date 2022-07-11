@@ -11,6 +11,10 @@
   line-height: 1;
 }
 
+body.overflowHIDDEN {
+  overflow-y: hidden;
+}
+
 a:hover {
   text-decoration: none !important;
 }
@@ -992,11 +996,13 @@ footer {
     width: 100%;
     position: absolute;
     top: 100%;
-    z-index: 10;
+    z-index: 10 !important;
     background-color: #fcfcfc;
     opacity: 0;
     visibility: hidden;
     transition: .4s;
+    max-height: 500px;
+    overflow-y: scroll;
   }
 
   .mobile-menu.activated {
@@ -1019,11 +1025,79 @@ footer {
     border-bottom: 2px solid #F3F3F3;
   }
 
-  .mobile-menu li:last-child a {
+  .mobile-menu li a.mobile-menu-signup  {
     font-weight: 700;
     color: #226AB6;
   }
 
+  ul .mobile-menu-services.active {
+    background-color: #256eb9;
+  }
+  ul .mobile-menu-about.active{
+    background-color: #256eb9;
+  }
+  .mobile-menu-about svg{
+    display: none;
+  }
+  .mobile-menu-about.active svg{
+    display: block;
+  }
+  .mobile-menu-services svg {
+    display: none;
+  }
+
+  .mobile-menu-services.active svg {
+    display: block;
+  }
+
+  
+
+  .mobile-menu-services.active a {
+    border: none;
+    display: flex;
+    justify-content: space-between;
+    color: #fff;
+    font-size: 12px;
+    font-weight: 700;
+  }
+.mobile-menu-about.active a{
+  border: none;
+  display: flex;
+  justify-content: space-between;
+  color: #fff;
+  font-size: 12px;
+  font-weight: 700;
+}
+  .services-dropdown {
+    padding-right: 60px;
+    display: none;
+  }
+  .about-dropdown{
+    padding-right: 60px;
+    display: none;
+  }
+  .services-dropdown li a {
+    font-size: 14px;
+    font-weight: 500;
+    color: #2C2C2C;
+  }
+  .about-dropdown li a{
+    font-size: 14px;
+    font-weight: 500;
+    color: #2C2C2C;
+  }
+  .services-dropdown.active {
+    display: block;
+  }
+  .about-dropdown.active{
+    display: block;
+  }
+  .services-dropdown li {
+    padding: 0 25px;
+  }
+  .about-dropdown li{
+    padding: 0 25px;
+  }
 
   .home-services {
     padding-top: 27px;
@@ -2677,6 +2751,7 @@ footer {
   justify-content: flex-end;
   padding: 30px;
   background-color: #fbfbfb;
+  overflow-y: scroll;
 }
 
 .chat-panel {
@@ -2735,24 +2810,32 @@ footer {
   outline: none;
   cursor: pointer;
 }
-.my-chat{
+
+.my-chat {
   position: relative;
   width: 100%;
   height: calc(100vh - 152px);
-  overflow-y: auto;
+  overflow-y: scroll !important;
   padding: 0 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
 }
-.my-chat li{
+
+.my-chat li {
   margin: 10px 0;
 }
-.my-chat .open-chat-my-message{
+
+.my-chat .open-chat-my-message {
   display: flex;
   justify-content: flex-end;
 }
-.my-chat li{
+
+.my-chat li {
   margin: 8px 0;
 }
-.my-chat .open-chat-my-message p{
+
+.my-chat .open-chat-my-message p {
   width: 288px;
   text-align: center;
   background: #92c1e928;
@@ -2763,7 +2846,8 @@ footer {
   color: #000;
   position: relative;
 }
-.my-chat .open-chat-my-message p::after{
+
+.my-chat .open-chat-my-message p::after {
   content: '';
   position: absolute;
   width: 40px;
@@ -2773,7 +2857,8 @@ footer {
   background-color: #92c1e928;
   clip-path: polygon(100% 0, 26% 100%, 0 0);
 }
-.my-chat .open-chat-my-message .message-date{
+
+.my-chat .open-chat-my-message .message-date {
   position: absolute;
   left: 5px;
   top: 5px;
@@ -2781,12 +2866,14 @@ footer {
   font-weight: 500;
   color: #8f8f8f;
 }
-.my-chat  .open-chat-companion-message{
- 
+
+.my-chat .open-chat-companion-message {
+
   display: flex;
   justify-content: flex-start;
 }
-.my-chat .open-chat-companion-message p{
+
+.my-chat .open-chat-companion-message p {
   width: 288px;
   text-align: center;
   background: #fff;
@@ -2797,7 +2884,8 @@ footer {
   color: #000;
   position: relative;
 }
-.my-chat .open-chat-companion-message p::before{
+
+.my-chat .open-chat-companion-message p::before {
   content: '';
   position: absolute;
   width: 40px;
@@ -2807,7 +2895,8 @@ footer {
   background-color: #fff;
   clip-path: polygon(100% 0, 74% 100%, 0 0);
 }
-.my-chat .open-chat-companion-message .message-date{
+
+.my-chat .open-chat-companion-message .message-date {
   position: absolute;
   right: 5px;
   top: 5px;

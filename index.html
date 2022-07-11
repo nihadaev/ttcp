@@ -15,14 +15,15 @@
 
     <!-- HEADER SIDE -->
     <header>
-
+        <!-- logo -->
         <div class="mywrapper header">
             <div class="logo">
-                <img src="img/logo.png" alt="logo">
+                <a href="index.html"><img src="img/logo.png" alt="logo"></a>
             </div>
 
             <!-- NAVBAR -->
             <nav>
+                <!-- page links -->
                 <ul>
                     <li><a href="/" class="active">Ana səhifə</a></li>
                     <li class="has-dropdown"><a href="patent.html">Xidmətlər</a>
@@ -63,7 +64,7 @@
             </nav>
             <!--NAVBAR-->
 
-            <!-- LANGUAGE, LOGIN, SELECT, SIGN UP SIDE-->
+            <!-- LANGUAGE, LOGIN, SELECT, SIGN UP,profile SIDE-->
             <ul class="language">
                 <li>
                     <span>Dil</span>
@@ -71,9 +72,11 @@
                         <option value="">AZ</option>
                     </select>
                 </li>
+                <!-- login link -->
                 <li class="header-login"><a href="authorization.html" class="login">Giriş</a></li>
+                <!-- signup link -->
                 <li class="header-signup"><a href="signup.html" class="signup">Qeydiyyat</a></li>
-
+                <!-- pfofile -->
                 <li class="header-profile has-dropdown">
                     <ul class="header-userinfo">
                         <li>
@@ -103,6 +106,13 @@
             </ul>
             <!-- LANGUAGE, LOGIN, SELECT, SIGN UP SIDE-->
 
+            <ul class="mobile-profile-icon">
+                <li class="has-mobile-dropdown">
+
+                </li>
+            </ul>
+
+            <!-- button to open mobile menu -->
             <div class="open-mobile-menu ">
                 <div class="line"></div>
                 <div class="line"></div>
@@ -111,14 +121,53 @@
 
         </div>
 
+        <!-- mobile menu -->
         <ul class="mobile-menu">
-            <li><a href="#">Xidmətlər</a></li>
-            <li><a href="#">Xəbərlər</a></li>
-            <li><a href="#">Haqqımızda</a></li>
-            <li><a href="#">Əlaqə</a></li>
-            <li><a href="#">Partnyorlar</a></li>
-            <li><a href="#">Giriş</a></li>
-            <li><a href="#">Qeydiyyat</a></li>
+            <li class="mobile-menu-services "><a  href="#">Xidmətlər  <svg class="xidmetler-rectangle" width="13" height="7" viewBox="0 0 13 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0.184239 0.180905C0.40756 -0.0383737 0.75702 -0.0583081 1.00327 0.121101L1.07383 0.180905L6.5 5.50859L11.9262 0.180905C12.1495 -0.0383737 12.499 -0.0583081 12.7452 0.121101L12.8158 0.180905C13.0391 0.400183 13.0594 0.743318 12.8767 0.985116L12.8158 1.05439L6.94479 6.8191C6.72147 7.03837 6.37201 7.05831 6.12576 6.8789L6.05521 6.8191L0.184239 1.05439C-0.0614131 0.813183 -0.0614131 0.422111 0.184239 0.180905Z" fill="#1C4570"/>
+                </svg>
+                </a>
+               
+               
+            </li>
+            <!-- services dropdown in mobile menu -->
+            <li >
+                <ul class="services-dropdown">
+                    <li><a href="patent.html">Patent və ixtiralar</a></li>
+                    <li><a href="#">Tədqiqatçı</a></li>
+                    <li><a href="#">İnvestor</a></li>
+                    <li><a href="#">KOB</a></li>
+                    <li><a href="#">Layihə və qrantlar</a></li>
+                    <li><a href="#">Mentorluq və təlimlər</a></li>
+                    <li><a href="#">Startap (İnkubasiya)</a></li>
+                    <li><a href="#">Texnologiyaların transferi və
+                        kommersiyalaşdırma</a></li>
+                    <li><a href="#">E-bülten</a></li>
+                </ul>
+            </li>
+            <li><a href="news.html">Xəbərlər </a></li>
+            <li class="mobile-menu-about"><a href="#">Haqqımızda
+                <svg class="xidmetler-rectangle" width="13" height="7" viewBox="0 0 13 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0.184239 0.180905C0.40756 -0.0383737 0.75702 -0.0583081 1.00327 0.121101L1.07383 0.180905L6.5 5.50859L11.9262 0.180905C12.1495 -0.0383737 12.499 -0.0583081 12.7452 0.121101L12.8158 0.180905C13.0391 0.400183 13.0594 0.743318 12.8767 0.985116L12.8158 1.05439L6.94479 6.8191C6.72147 7.03837 6.37201 7.05831 6.12576 6.8789L6.05521 6.8191L0.184239 1.05439C-0.0614131 0.813183 -0.0614131 0.422111 0.184239 0.180905Z" fill="#1C4570"/>
+                    </svg>
+            </a></li>
+            <!-- about dropdown in mobile menu -->
+            <li>
+                <ul class="about-dropdown">
+                    <li><a href="abouttotal.html">Ümumi</a></li>
+                    <li><a href="aboutmission.html">Missiyamız</a></li>
+                    <li><a href="aboutmission2.html">Məqsədimiz</a></li>
+                    <li><a href="#">Fəaliyyət sahələrimiz</a></li>
+                    <li><a href="#">KOB</a></li>
+                    <li><a href="#">Əlavə xidmətlərimiz</a></li>
+                    <li><a href="#">Anket formu</a></li>
+                    <li><a href="#">AMEA YTP istismar proqramı</a></li>
+                </ul>
+            </li>
+            <li><a href="contact.html">Əlaqə</a></li>
+            <li><a href="partners.html">Partnyorlar</a></li>
+            <li><a href="authorization.html">Giriş</a></li>
+            <li><a href="signup.html" class="mobile-menu-signup">Qeydiyyat</a></li>
         </ul>
     </header>
 
@@ -648,7 +697,6 @@
                                     d="M28.1598 0C35.2398 0 39.9998 4.56 39.9998 11.34V28.68C39.9998 35.458 35.2398 40 28.1598 40H11.8198C4.75979 40 -0.000213623 35.458 -0.000213623 28.68V11.34C-0.000213623 4.56 4.75979 0 11.8198 0H28.1598ZM21.6998 11.44C21.1198 10.86 20.1598 10.86 19.5798 11.44C18.9998 12.04 18.9998 12.98 19.5798 13.58L24.5398 18.5H11.8398C10.9998 18.5 10.3398 19.18 10.3398 20C10.3398 20.84 10.9998 21.5 11.8398 21.5H24.5398L19.5798 26.44C19.2998 26.72 19.1398 27.12 19.1398 27.5C19.1398 27.878 19.2998 28.26 19.5798 28.56C20.1598 29.14 21.1198 29.14 21.6998 28.56L29.2398 21.06C29.7998 20.5 29.7998 19.5 29.2398 18.94L21.6998 11.44Z"
                                     fill="#DBDBDB" />
                             </svg>
-
                         </div>
                         <div class="swiper-button-prev">
                             <svg width="40" height="40" viewBox="0 0 40 40" fill="none"
@@ -657,7 +705,6 @@
                                     d="M28.1798 0C35.2398 0 39.9998 4.542 39.9998 11.32V28.66C39.9998 35.44 35.2398 40 28.1798 40H11.8398C4.75976 40 -0.000244141 35.44 -0.000244141 28.66V11.32C-0.000244141 4.542 4.75976 0 11.8398 0H28.1798ZM20.4198 11.44C19.8398 10.86 18.8798 10.86 18.2998 11.44L10.7598 18.94C10.1998 19.5 10.1998 20.5 10.7598 21.06L18.2998 28.56C18.8798 29.14 19.8398 29.14 20.4198 28.56C20.9998 27.96 20.9998 27.02 20.4198 26.42L15.4598 21.5H28.1598C28.9998 21.5 29.6598 20.82 29.6598 20C29.6598 19.16 28.9998 18.5 28.1598 18.5H15.4598L20.4198 13.56C20.6998 13.28 20.8598 12.88 20.8598 12.5C20.8598 12.122 20.6998 11.74 20.4198 11.44Z"
                                     fill="#DBDBDB" />
                             </svg>
-
                         </div>
                     </div>
 
@@ -1028,6 +1075,7 @@
 
     <script type="module">
         import Swiper from 'https://unpkg.com/swiper@8/swiper-bundle.esm.browser.min.js'
+        // swiper for services
         const swiper = new Swiper('#firstslider', {
             slidesPerView: 1,
             pagination: {
@@ -1043,6 +1091,7 @@
             loop: true,
             autoplayDisableOnInteraction: true,
         })
+        // swiper for news
         const swiper2 = new Swiper('#secondslider', {
 
             slidesPerView: 3.7,
@@ -1078,6 +1127,7 @@
             },
         })
 
+        // swiper for apply elements
         const swiper3 = new Swiper('#thirdslider', {
 
             slidesPerView: 3.7,
@@ -1094,23 +1144,65 @@
             },
         })
 
+        // mobile menu elements
         const mobileopen = document.querySelector('.open-mobile-menu')
         const mobilemenu = document.querySelector('.mobile-menu')
+        const body = document.querySelector('body')
+        //dropdown services
+        const service = document.querySelector('.mobile-menu-services')
+        const servicedropdown = document.querySelector('.services-dropdown')
+        //dropdown about
+        const about= document.querySelector('.mobile-menu-about')
+        const aboutdropdown= document.querySelector('.about-dropdown')
 
+        // mobile menu
         mobileopen.addEventListener('click', (event) => {
             event.stopPropagation()
             mobileopen.classList.toggle('activated')
             mobilemenu.classList.toggle('activated')
+            body.classList.toggle('overflowHIDDEN')
+            // close service dropdown when user closed mobile menu
+            if(service.classList.contains('active')){
+                service.classList.remove('active')
+                servicedropdown.classList.remove('active')
+            }
+            // close about dropdown when user closed mobile menu
+            if(about.classList.contains('active')){
+                about.classList.remove('active')
+                aboutdropdown.classList.remove('active')
+            }
         })
-
+        // on click close mobile menu
         document.addEventListener('click', () => {
             mobilemenu.classList.remove('activated')
+            mobileopen.classList.remove('activated')
         })
         mobilemenu.addEventListener('click', (event) => {
             event.stopPropagation()
         })
 
+        //  service dropdown open
+        service.addEventListener('click', () => {
+            service.classList.toggle('active')
+            servicedropdown.classList.toggle('active')
+            // close about dropdown if it open when user try to open service dropdown
+            if(about.classList.contains('active')){
+                about.classList.remove('active')
+                aboutdropdown.classList.remove('active')
+            }
+        })
+        // about dropdown open
+        about.addEventListener('click', () => {
+            about.classList.toggle('active')
+            aboutdropdown.classList.toggle('active')
+            // close service dropdown if it open when user try to open about dropdown
+            if(service.classList.contains('active')){
+                service.classList.remove('active')
+                servicedropdown.classList.remove('active')
+            }
+        })
 
+        // stop autoplay when you hover on slider
         const myswip1 = document.querySelector('.services-slide')
 
         myswip1.addEventListener('mouseenter', () => {
