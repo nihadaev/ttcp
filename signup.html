@@ -8,19 +8,20 @@
     <title>Document</title>
 </head>
 <body>
-      <!-- HEADER SIDE -->
-      <header>
-
+       <!-- HEADER SIDE -->
+    <header>
+        <!-- logo -->
         <div class="mywrapper header">
             <div class="logo">
-                <img src="img/logo.png" alt="logo">
+                <a href="/"><img src="img/logo.png" alt="logo"></a>
             </div>
 
             <!-- NAVBAR -->
             <nav>
+                <!-- page links -->
                 <ul>
                     <li><a href="/" class="active">Ana səhifə</a></li>
-                    <li class="has-dropdown"><a href="/">Xidmətlər</a>
+                    <li class="has-dropdown"><a href="">Xidmətlər</a>
                         <div class="kvadrat"></div>
                         <ul class="mydropdown">
 
@@ -36,8 +37,8 @@
                             <li><a href="#">E-bülten</a></li>
                         </ul>
                     </li>
-                    <li><a href="/">Xəbərlər</a></li>
-                    <li class="has-dropdown"><a href="/">Haqqımızda</a>
+                    <li><a href="news.html">Xəbərlər</a></li>
+                    <li class="has-dropdown"><a href="abouttotal.html">Haqqımızda</a>
                         <div class="kvadrat"></div>
                         <ul class="mydropdown">
                             <li><a href="abouttotal.html">Ümumi</a></li>
@@ -58,7 +59,7 @@
             </nav>
             <!--NAVBAR-->
 
-            <!-- LANGUAGE, LOGIN, SELECT, SIGN UP SIDE-->
+            <!-- LANGUAGE, LOGIN, SELECT, SIGN UP,profile SIDE-->
             <ul class="language">
                 <li>
                     <span>Dil</span>
@@ -66,27 +67,175 @@
                         <option value="">AZ</option>
                     </select>
                 </li>
-                <li><a href="authorization.html" class="login">Giriş</a></li>
-                <li><a href="signup.html" class="signup">Qeydiyyat</a></li>
+                <!-- login link (if user dont sign in, use this li like flex) -->
+                <li class="header-login">
+                    <hr>
+                    <a href="authorization.html" class="login">Giriş</a>
+                </li>
+                <!-- signup link (if user dont sign in, also use this li like flex) -->
+                <li class="header-signup">
+                    <hr>
+                    <a href="signup.html" class="signup">Qeydiyyat</a>
+                </li>
+                <!-- profile (if user signed in, make header-signup and header-login display none 
+                    and make header-profile display flex ) -->
+                <li class="header-profile has-dropdown">
+                    <hr>
+                    <!-- User name and surname -->
+                    <ul class="header-userinfo">
+                        <li>
+                            <p> <span id="header-username"> Rashad </span> <br> <span id="header-usersurname">
+                                    Abdullayev </span>
+                            </p>
+                        </li>
+                        <!-- user avatar -->
+                        <li>
+                            <a href="#">
+                                <img src="img/header-profile.png" alt="">
+                            </a>
+                        </li>
+                    </ul>
+                    <!-- user page links -->
+                    <ul class="mydropdown">
+                        <li><a href="userinfo.html">Profil məlumatlarım</a></li>
+                        <li><a href="profilepatent.html">Patent və ixtiralarım</a></li>
+                        <li><a href="#">İdeyalarım</a></li>
+                        <li><a href="#">İnvestor olduqlarım</a></li>
+                        <li><a href="#">Start Up’larım</a></li>
+                        <li><a href="#">Araşdırma mövzularım</a></li>
+                        <li><a href="#">Startap (İnkubasiya)</a></li>
+                        <li><a href="#">Tətbiq yönümlü hazır
+                                tədqiqatlarım</a></li>
+                        <li class="mailbox"><a href="mailbox.html">Mailbox <span class="messages-count">1</span> </a>
+                        </li>
+                        <li><a href="#">Çıxış</a></li>
+                    </ul>
+                </li>
             </ul>
-            <!-- LANGUAGE, LOGIN, SELECT, SIGN UP SIDE-->
 
-            <div class="open-mobile-menu ">
-                <div class="line"></div>
-                <div class="line"></div>
-                <div class="line"></div>
+            <!-- open mobile menu and profile mobile menu -->
+            <ul class="mobile-menu-openers">
+                <!-- open profile menu -->
+                <li class="open-profile-menu">
+                    <span class="profile-icon">
+                        <svg width="16" height="20" viewBox="0 0 16 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M8 13.1739C12.3386 13.1739 16 13.8789 16 16.599C16 19.32 12.3146 20 8 20C3.66237 20 0 19.295 0 16.575C0 13.8539 3.68538 13.1739 8 13.1739ZM8 0C10.9391 0 13.294 2.35402 13.294 5.29105C13.294 8.22808 10.9391 10.5831 8 10.5831C5.0619 10.5831 2.70601 8.22808 2.70601 5.29105C2.70601 2.35402 5.0619 0 8 0Z"
+                                fill="#226AB6" />
+                        </svg>
+                    </span>
+                </li>
+                <li>
+                    <hr>
+                </li>
+                <!-- button to open mobile menu -->
+                <li class="open-mobile-menu ">
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                </li>
+            </ul>
+        </div>
+        <!-- mobile profile menu -->
+        <div class="mobile-profile-menu">
+            <div class="mobile-profile-menu-heading">
+                <!--mobile profile menu userinfo -->
+                <div class="mobile-profile-menu-userinfo">
+                    <!-- user avatar -->
+                    <span class="mobile-profile-menu-avatar">
+                        <svg width="47" height="48" viewBox="0 0 47 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="23.4336" cy="24.0799" r="23.0221" fill="#256EB9" stroke="white"
+                                stroke-width="0.823129" />
+                            <path
+                                d="M23.5455 29.1611C29.6252 29.1611 34.7559 30.1465 34.7559 33.9483C34.7559 37.7516 29.5916 38.702 23.5455 38.702C17.4671 38.702 12.335 37.7166 12.335 33.9148C12.335 30.1115 17.4993 29.1611 23.5455 29.1611ZM23.5455 10.7475C27.664 10.7475 30.964 14.0378 30.964 18.1429C30.964 22.2481 27.664 25.5398 23.5455 25.5398C19.4283 25.5398 16.1269 22.2481 16.1269 18.1429C16.1269 14.0378 19.4283 10.7475 23.5455 10.7475Z"
+                                fill="white" />
+                        </svg>
+                        <span class="messages-count">
+                            1
+                        </span>
+                    </span>
+                    <p class="mobile-profile-menu-username">Rashad Abdullayev</p>
+                </div>
+                <span class="mobile-profile-menu-rectangle">
+                    <svg width="13" height="7" viewBox="0 0 13 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M0.184239 0.180905C0.40756 -0.0383737 0.75702 -0.0583081 1.00327 0.121101L1.07383 0.180905L6.5 5.50859L11.9262 0.180905C12.1495 -0.0383737 12.499 -0.0583081 12.7452 0.121101L12.8158 0.180905C13.0391 0.400183 13.0594 0.743318 12.8767 0.985116L12.8158 1.05439L6.94479 6.8191C6.72147 7.03837 6.37201 7.05831 6.12576 6.8789L6.05521 6.8191L0.184239 1.05439C-0.0614131 0.813183 -0.0614131 0.422111 0.184239 0.180905Z"
+                            fill="#1C4570" />
+                    </svg>
+
+                </span>
             </div>
+            <!-- mobile profile menu list -->
+            <ul class="mobile-profile-menu-list mywrapper">
+                <li ><a href="userinfo.html">Profil məlumatlarım</a></li>
+                <li><a href="profilepatent.html">Patent və ixtiralarım</a></li>
+                <li><a href="#">İdeyalarım</a></li>
+                <li><a href="#">İnvestor olduqlarım</a></li>
+                <li><a href="#">Start Up’larım</a></li>
+                <li><a href="#">Araşdırma mövzularım</a></li>
+                <li><a href="#">Startap (İnkubasiya)</a></li>
+                <li class="mailbox"><a href="mailbox.html">Mailbox <span class="messages-count">1</span> </a> </li>
+            </ul>
 
+            <!-- mobile profile menu foot -->
+            <div class="mobile-profile-menu-foot">
+                <a href="#">Çıxış</a>
+            </div>
         </div>
 
+        <!-- mobile menu -->
         <ul class="mobile-menu">
-            <li><a href="#">Xidmətlər</a></li>
-            <li><a href="#">Xəbərlər</a></li>
-            <li><a href="#">Haqqımızda</a></li>
-            <li><a href="#">Əlaqə</a></li>
-            <li><a href="#">Partnyorlar</a></li>
-            <li><a href="#">Giriş</a></li>
-            <li><a href="#">Qeydiyyat</a></li>
+            <li class="mobile-menu-services "><a href="#">Xidmətlər <svg class="xidmetler-rectangle" width="13"
+                        height="7" viewBox="0 0 13 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M0.184239 0.180905C0.40756 -0.0383737 0.75702 -0.0583081 1.00327 0.121101L1.07383 0.180905L6.5 5.50859L11.9262 0.180905C12.1495 -0.0383737 12.499 -0.0583081 12.7452 0.121101L12.8158 0.180905C13.0391 0.400183 13.0594 0.743318 12.8767 0.985116L12.8158 1.05439L6.94479 6.8191C6.72147 7.03837 6.37201 7.05831 6.12576 6.8789L6.05521 6.8191L0.184239 1.05439C-0.0614131 0.813183 -0.0614131 0.422111 0.184239 0.180905Z"
+                            fill="#1C4570" />
+                    </svg>
+                </a>
+
+
+            </li>
+            <!-- services dropdown in mobile menu -->
+            <li>
+                <ul class="services-dropdown">
+                    <li><a href="patent.html">Patent və ixtiralar</a></li>
+                    <li><a href="#">Tədqiqatçı</a></li>
+                    <li><a href="#">İnvestor</a></li>
+                    <li><a href="#">KOB</a></li>
+                    <li><a href="#">Layihə və qrantlar</a></li>
+                    <li><a href="#">Mentorluq və təlimlər</a></li>
+                    <li><a href="#">Startap (İnkubasiya)</a></li>
+                    <li><a href="#">Texnologiyaların transferi və
+                            kommersiyalaşdırma</a></li>
+                    <li><a href="#">E-bülten</a></li>
+                </ul>
+            </li>
+            <li><a href="news.html">Xəbərlər </a></li>
+            <li class="mobile-menu-about"><a href="#">Haqqımızda
+                    <svg class="xidmetler-rectangle" width="13" height="7" viewBox="0 0 13 7" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M0.184239 0.180905C0.40756 -0.0383737 0.75702 -0.0583081 1.00327 0.121101L1.07383 0.180905L6.5 5.50859L11.9262 0.180905C12.1495 -0.0383737 12.499 -0.0583081 12.7452 0.121101L12.8158 0.180905C13.0391 0.400183 13.0594 0.743318 12.8767 0.985116L12.8158 1.05439L6.94479 6.8191C6.72147 7.03837 6.37201 7.05831 6.12576 6.8789L6.05521 6.8191L0.184239 1.05439C-0.0614131 0.813183 -0.0614131 0.422111 0.184239 0.180905Z"
+                            fill="#1C4570" />
+                    </svg>
+                </a></li>
+            <!-- about dropdown in mobile menu -->
+            <li>
+                <ul class="about-dropdown">
+                    <li><a href="abouttotal.html">Ümumi</a></li>
+                    <li><a href="aboutmission.html">Missiyamız</a></li>
+                    <li><a href="aboutmission2.html">Məqsədimiz</a></li>
+                    <li><a href="#">Fəaliyyət sahələrimiz</a></li>
+                    <li><a href="#">KOB</a></li>
+                    <li><a href="#">Əlavə xidmətlərimiz</a></li>
+                    <li><a href="#">Anket formu</a></li>
+                    <li><a href="#">AMEA YTP istismar proqramı</a></li>
+                </ul>
+            </li>
+            <li><a href="contact.html">Əlaqə</a></li>
+            <li><a href="partners.html">Partnyorlar</a></li>
+            <li><a href="authorization.html">Giriş</a></li>
+            <li><a href="signup.html" class="mobile-menu-signup">Qeydiyyat</a></li>
         </ul>
     </header>
 
@@ -323,5 +472,7 @@
         </div>
     </footer>
     <!-- FOOTER SIDE END -->
+
+    <script src="js/main.js"></script>
 </body>
 </html>
