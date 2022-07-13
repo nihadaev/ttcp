@@ -254,13 +254,13 @@ header .header .language .login {
 }
 
 .header .header-login {
-  display: flex;
+  display: none;
   align-items: center;
   position: relative;
 }
 
 .header .header-signup {
-  display: flex;
+  display: none;
   align-items: center;
   position: relative;
 }
@@ -272,7 +272,7 @@ header .header .language .signup {
 }
 
 .header .header-profile {
-  display: none;
+  display: flex;
 }
 .language hr{
   width: 24px;
@@ -2916,9 +2916,16 @@ footer {
   background-color: #236db8;
   cursor: pointer;
   border-radius: 5px;
-  position: absolute;
-  left: 45px;
-  top: 16px;
+}
+.patent-table .userpatent-svg{
+  width: 21px !important;
+  padding-left: 5px;  
+}
+.patent-table .userpatent-svg span{
+  width: 100%;
+}
+.patent-table .userpatent-svg svg{
+  width: 100%;
 }
 
 .new-patent-page {
@@ -3401,9 +3408,6 @@ footer {
   height: calc(100vh - 152px);
   overflow-y: scroll !important;
   padding: 0 30px;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
 }
 
 .my-chat li {
@@ -3422,7 +3426,7 @@ footer {
 .my-chat .open-chat-my-message p {
   width: 288px;
   text-align: center;
-  background: #92c1e928;
+  background: #e9f4ff;
   border-radius: 6px;
   padding: 18px 0;
   font-size: 12px;
@@ -3438,7 +3442,7 @@ footer {
   height: 25px;
   right: -20px;
   top: 0;
-  background-color: #92c1e928;
+  background: #e9f4ff;
   clip-path: polygon(100% 0, 26% 100%, 0 0);
 }
 
@@ -3525,6 +3529,48 @@ footer {
     .new-patent-form-submit-buttons button{
       width: 100% !important;
       margin-bottom: 15px;
+    }
+
+    .profile-patent-page{
+      position: relative;
+      padding-bottom: 150px;
+    }
+    .new-patent{
+      position: absolute;
+      bottom: 40px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 70% !important;
+      
+    }
+    .profile-patent-table-links ul{
+      width: 100%;
+      justify-content: space-between !important;
+    }
+    .profile-patent-table-links ul li{
+      width: 33%;
+    }
+    .profile-patent-table-links ul li a{
+      width: 100% !important;
+      font-size: 12px ;
+      padding: 0;
+      height: 46px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      
+    }
+    .profile-patent-table-links ul li a.active{
+      height: auto !important;
+    }
+    .patent-table thead tr th{
+      font-size: 12px;
+    }
+    .patent-table tbody tr td{
+      font-size: 12px;
+    }
+    .patent-table tbody tr td span{
+      left: 0;
     }
 }
 
