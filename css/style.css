@@ -3022,7 +3022,7 @@ footer {
   transform: translateY(-20px);
   transition: .4s;
 }
-.patent-table tr .edit-dropdown.active{
+.patent-table tr .edit-dropdown.actived{
   opacity: 1;
   visibility: visible;
   transform: translateY(0);

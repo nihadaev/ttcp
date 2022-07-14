@@ -537,14 +537,16 @@
     <script src="js/main.js"></script>
     <script>
         
-       $('.userpatent-svg-click').on('click', function(){
-    
-            $(this).closest('.userpatent-svg').find('.edit-dropdown').toggleClass('active')
-        
-         
-        
-
-
+       $('.userpatent-svg-click').on('click', function(e){
+        e.stopPropagation()
+            $(".actived").removeClass("actived")
+            $(this).closest('.userpatent-svg').find('.edit-dropdown').toggleClass('actived')
+       })
+       $(document).on("click",(e)=>{
+        $(".actived").removeClass("actived")
+       })
+       $('.edit-dropdown').on('click', (e) => {
+        e.stopPropagation()
        })
     </script>
 </body>
