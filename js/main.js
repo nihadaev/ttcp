@@ -16,8 +16,16 @@
  // open profile menu event
  openprofile.addEventListener('click', (event) => {
      event.stopPropagation()
+
+     if(body.classList.contains('overflowHIDDEN') && profilemenu.classList.contains('active')){
+        body.classList.remove('overflowHIDDEN')
+     }else{
+        body.classList.add('overflowHIDDEN')
+     }
+
+
      // open profile menu
-     profilemenu.classList.toggle('active')
+    profilemenu.classList.toggle('active')
     
      
      // close mobile menu if it opened
@@ -25,6 +33,8 @@
          mobilemenu.classList.remove('active')
          mobileopen.classList.remove('activated')
      }
+
+    
  })
  
  profilemenu.addEventListener('click', (event) => {
@@ -34,6 +44,12 @@
  // mobile menu
  mobileopen.addEventListener('click', (event) => {
      event.stopPropagation()
+
+     if(body.classList.contains('overflowHIDDEN') && mobilemenu.classList.contains('active')){
+        body.classList.remove('overflowHIDDEN')
+     }else{
+        body.classList.add('overflowHIDDEN')
+     }
      // open mobile menu
      mobileopen.classList.toggle('activated')
      mobilemenu.classList.toggle('active')
@@ -52,6 +68,8 @@
      if(profilemenu.classList.contains('active')){
          profilemenu.classList.remove('active')
      }
+
+    
  })
  // on click on header side or body side close mobile menu and profile menu
  window.addEventListener('click', () => {
@@ -64,11 +82,7 @@
      event.stopPropagation()
  })
 
- if(mobilemenu.classList.contains('active') || profilemenu.classList.contains('active')){
-     body.classList.add('overflowHIDDEN')
- }else{
-     body.classList.remove('overflowHIDDEN')
- }
+
 
 
  //  service dropdown open
@@ -90,4 +104,12 @@
          service.classList.remove('active')
          servicedropdown.classList.remove('active')
      }
+ })
+
+
+ const footerdropdown = document.querySelector('.footer-select-language')
+ const openfooterdropdown = document.querySelector('.open-footer-dropdown')
+
+ openfooterdropdown.addEventListener('click', () => {
+    footerdropdown.classList.toggle('active')
  })

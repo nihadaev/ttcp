@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,241 +8,242 @@
     <link rel="stylesheet" href="css/style.css">
     <title>Document</title>
 </head>
+
 <body>
-  <!-- HEADER SIDE -->
-  <header>
-    <!-- logo -->
-    <div class="mywrapper header">
-        <div class="logo">
-            <a href="/"><img src="img/logo.png" alt="logo"></a>
-        </div>
-
-        <!-- NAVBAR -->
-        <nav>
-            <!-- page links -->
-            <ul>
-                <li><a href="/" class="active">Ana səhifə</a></li>
-                <li class="has-dropdown"><a href="">Xidmətlər</a>
-                    <div class="kvadrat"></div>
-                    <ul class="mydropdown">
-
-                        <li><a href="patent.html">Patent və ixtiralar</a></li>
-                        <li><a href="#">Tədqiqatçı</a></li>
-                        <li><a href="#">İnvestor</a></li>
-                        <li><a href="#">KOB</a></li>
-                        <li><a href="#">Layihə və qrantlar</a></li>
-                        <li><a href="#">Mentorluq və təlimlər</a></li>
-                        <li><a href="#">Startap (İnkubasiya)</a></li>
-                        <li><a href="#">Texnologiyaların transferi və
-                                kommersiyalaşdırma</a></li>
-                        <li><a href="#">E-bülten</a></li>
-                    </ul>
-                </li>
-                <li><a href="news.html">Xəbərlər</a></li>
-                <li class="has-dropdown"><a href="abouttotal.html">Haqqımızda</a>
-                    <div class="kvadrat"></div>
-                    <ul class="mydropdown">
-                        <li><a href="abouttotal.html">Ümumi</a></li>
-                        <li><a href="aboutmission.html">Missiyamız</a></li>
-                        <li><a href="aboutmission2.html">Məqsədimiz</a></li>
-                        <li><a href="#">Fəaliyyət sahələrimiz</a></li>
-                        <li><a href="#">KOB</a></li>
-                        <li><a href="#">Əlavə xidmətlərimiz</a></li>
-                        <li><a href="#">Anket formu</a></li>
-                        <li><a href="#">AMEA YTP istismar
-                                proqramı </a></li>
-                    </ul>
-                </li>
-                <li><a href="contact.html">Əlaqə</a></li>
-                <li><a href="partners.html">Partnyorlar</a></li>
-
-            </ul>
-        </nav>
-        <!--NAVBAR-->
-
-        <!-- LANGUAGE, LOGIN, SELECT, SIGN UP,profile SIDE-->
-        <ul class="language">
-            <li>
-                <span>Dil</span>
-                <select name="language" id="language">
-                    <option value="">AZ</option>
-                </select>
-            </li>
-            <!-- login link (if user dont sign in, use this li like flex) -->
-            <li class="header-login">
-                <hr>
-                <a href="authorization.html" class="login">Giriş</a>
-            </li>
-            <!-- signup link (if user dont sign in, also use this li like flex) -->
-            <li class="header-signup">
-                <hr>
-                <a href="signup.html" class="signup">Qeydiyyat</a>
-            </li>
-            <!-- profile (if user signed in, make header-signup and header-login display none 
-                and make header-profile display flex ) -->
-            <li class="header-profile has-dropdown">
-                <hr>
-                <!-- User name and surname -->
-                <ul class="header-userinfo">
-                    <li>
-                        <p> <span id="header-username"> Rashad </span> <br> <span id="header-usersurname">
-                                Abdullayev </span>
-                        </p>
-                    </li>
-                    <!-- user avatar -->
-                    <li>
-                        <a href="#">
-                            <img src="img/header-profile.png" alt="">
-                        </a>
-                    </li>
-                </ul>
-                <!-- user page links -->
-                <ul class="mydropdown">
-                    <li><a href="userinfo.html">Profil məlumatlarım</a></li>
-                    <li><a href="profilepatent.html">Patent və ixtiralarım</a></li>
-                    <li><a href="#">İdeyalarım</a></li>
-                    <li><a href="#">İnvestor olduqlarım</a></li>
-                    <li><a href="#">Start Up’larım</a></li>
-                    <li><a href="#">Araşdırma mövzularım</a></li>
-                    <li><a href="#">Startap (İnkubasiya)</a></li>
-                    <li><a href="#">Tətbiq yönümlü hazır
-                            tədqiqatlarım</a></li>
-                    <li class="mailbox"><a href="mailbox.html">Mailbox <span class="messages-count">1</span> </a>
-                    </li>
-                    <li><a href="#">Çıxış</a></li>
-                </ul>
-            </li>
-        </ul>
-
-        <!-- open mobile menu and profile mobile menu -->
-        <ul class="mobile-menu-openers">
-            <!-- open profile menu -->
-            <li class="open-profile-menu">
-                <span class="profile-icon">
-                    <svg width="16" height="20" viewBox="0 0 16 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path
-                            d="M8 13.1739C12.3386 13.1739 16 13.8789 16 16.599C16 19.32 12.3146 20 8 20C3.66237 20 0 19.295 0 16.575C0 13.8539 3.68538 13.1739 8 13.1739ZM8 0C10.9391 0 13.294 2.35402 13.294 5.29105C13.294 8.22808 10.9391 10.5831 8 10.5831C5.0619 10.5831 2.70601 8.22808 2.70601 5.29105C2.70601 2.35402 5.0619 0 8 0Z"
-                            fill="#226AB6" />
-                    </svg>
-                </span>
-            </li>
-            <li>
-                <hr>
-            </li>
-            <!-- button to open mobile menu -->
-            <li class="open-mobile-menu ">
-                <div class="line"></div>
-                <div class="line"></div>
-                <div class="line"></div>
-            </li>
-        </ul>
-    </div>
-    <!-- mobile profile menu -->
-    <div class="mobile-profile-menu">
-        <div class="mobile-profile-menu-heading">
-            <!--mobile profile menu userinfo -->
-            <div class="mobile-profile-menu-userinfo">
-                <!-- user avatar -->
-                <span class="mobile-profile-menu-avatar">
-                    <svg width="47" height="48" viewBox="0 0 47 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <circle cx="23.4336" cy="24.0799" r="23.0221" fill="#256EB9" stroke="white"
-                            stroke-width="0.823129" />
-                        <path
-                            d="M23.5455 29.1611C29.6252 29.1611 34.7559 30.1465 34.7559 33.9483C34.7559 37.7516 29.5916 38.702 23.5455 38.702C17.4671 38.702 12.335 37.7166 12.335 33.9148C12.335 30.1115 17.4993 29.1611 23.5455 29.1611ZM23.5455 10.7475C27.664 10.7475 30.964 14.0378 30.964 18.1429C30.964 22.2481 27.664 25.5398 23.5455 25.5398C19.4283 25.5398 16.1269 22.2481 16.1269 18.1429C16.1269 14.0378 19.4283 10.7475 23.5455 10.7475Z"
-                            fill="white" />
-                    </svg>
-                    <span class="messages-count">
-                        1
-                    </span>
-                </span>
-                <p class="mobile-profile-menu-username">Rashad Abdullayev</p>
+    <!-- HEADER SIDE -->
+    <header>
+        <!-- logo -->
+        <div class="mywrapper header">
+            <div class="logo">
+                <a href="/"><img src="img/logo.png" alt="logo"></a>
             </div>
-            <span class="mobile-profile-menu-rectangle">
-                <svg width="13" height="7" viewBox="0 0 13 7" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path
-                        d="M0.184239 0.180905C0.40756 -0.0383737 0.75702 -0.0583081 1.00327 0.121101L1.07383 0.180905L6.5 5.50859L11.9262 0.180905C12.1495 -0.0383737 12.499 -0.0583081 12.7452 0.121101L12.8158 0.180905C13.0391 0.400183 13.0594 0.743318 12.8767 0.985116L12.8158 1.05439L6.94479 6.8191C6.72147 7.03837 6.37201 7.05831 6.12576 6.8789L6.05521 6.8191L0.184239 1.05439C-0.0614131 0.813183 -0.0614131 0.422111 0.184239 0.180905Z"
-                        fill="#1C4570" />
-                </svg>
 
-            </span>
+            <!-- NAVBAR -->
+            <nav>
+                <!-- page links -->
+                <ul>
+                    <li><a href="/" class="active">Ana səhifə</a></li>
+                    <li class="has-dropdown"><a href="">Xidmətlər</a>
+                        <div class="kvadrat"></div>
+                        <ul class="mydropdown">
+
+                            <li><a href="patent.html">Patent və ixtiralar</a></li>
+                            <li><a href="#">Tədqiqatçı</a></li>
+                            <li><a href="#">İnvestor</a></li>
+                            <li><a href="#">KOB</a></li>
+                            <li><a href="#">Layihə və qrantlar</a></li>
+                            <li><a href="#">Mentorluq və təlimlər</a></li>
+                            <li><a href="#">Startap (İnkubasiya)</a></li>
+                            <li><a href="#">Texnologiyaların transferi və
+                                    kommersiyalaşdırma</a></li>
+                            <li><a href="#">E-bülten</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="news.html">Xəbərlər</a></li>
+                    <li class="has-dropdown"><a href="abouttotal.html">Haqqımızda</a>
+                        <div class="kvadrat"></div>
+                        <ul class="mydropdown">
+                            <li><a href="abouttotal.html">Ümumi</a></li>
+                            <li><a href="aboutmission.html">Missiyamız</a></li>
+                            <li><a href="aboutmission2.html">Məqsədimiz</a></li>
+                            <li><a href="#">Fəaliyyət sahələrimiz</a></li>
+                            <li><a href="#">KOB</a></li>
+                            <li><a href="#">Əlavə xidmətlərimiz</a></li>
+                            <li><a href="#">Anket formu</a></li>
+                            <li><a href="#">AMEA YTP istismar
+                                    proqramı </a></li>
+                        </ul>
+                    </li>
+                    <li><a href="contact.html">Əlaqə</a></li>
+                    <li><a href="partners.html">Partnyorlar</a></li>
+
+                </ul>
+            </nav>
+            <!--NAVBAR-->
+
+            <!-- LANGUAGE, LOGIN, SELECT, SIGN UP,profile SIDE-->
+            <ul class="language">
+                <li>
+                    <span>Dil</span>
+                    <select name="language" id="language">
+                        <option value="">AZ</option>
+                    </select>
+                </li>
+                <!-- login link (if user dont sign in, use this li like flex) -->
+                <li class="header-login">
+                    <hr>
+                    <a href="authorization.html" class="login">Giriş</a>
+                </li>
+                <!-- signup link (if user dont sign in, also use this li like flex) -->
+                <li class="header-signup">
+                    <hr>
+                    <a href="signup.html" class="signup">Qeydiyyat</a>
+                </li>
+                <!-- profile (if user signed in, make header-signup and header-login display none 
+                and make header-profile display flex ) -->
+                <li class="header-profile has-dropdown">
+                    <hr>
+                    <!-- User name and surname -->
+                    <ul class="header-userinfo">
+                        <li>
+                            <p> <span id="header-username"> Rashad </span> <br> <span id="header-usersurname">
+                                    Abdullayev </span>
+                            </p>
+                        </li>
+                        <!-- user avatar -->
+                        <li>
+                            <a href="#">
+                                <img src="img/header-profile.png" alt="">
+                            </a>
+                        </li>
+                    </ul>
+                    <!-- user page links -->
+                    <ul class="mydropdown">
+                        <li><a href="userinfo.html">Profil məlumatlarım</a></li>
+                        <li><a href="profilepatent.html">Patent və ixtiralarım</a></li>
+                        <li><a href="#">İdeyalarım</a></li>
+                        <li><a href="#">İnvestor olduqlarım</a></li>
+                        <li><a href="#">Start Up’larım</a></li>
+                        <li><a href="#">Araşdırma mövzularım</a></li>
+                        <li><a href="#">Startap (İnkubasiya)</a></li>
+                        <li><a href="#">Tətbiq yönümlü hazır
+                                tədqiqatlarım</a></li>
+                        <li class="mailbox"><a href="mailbox.html">Mailbox <span class="messages-count">1</span> </a>
+                        </li>
+                        <li><a href="#">Çıxış</a></li>
+                    </ul>
+                </li>
+            </ul>
+
+            <!-- open mobile menu and profile mobile menu -->
+            <ul class="mobile-menu-openers">
+                <!-- open profile menu -->
+                <li class="open-profile-menu">
+                    <span class="profile-icon">
+                        <svg width="16" height="20" viewBox="0 0 16 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M8 13.1739C12.3386 13.1739 16 13.8789 16 16.599C16 19.32 12.3146 20 8 20C3.66237 20 0 19.295 0 16.575C0 13.8539 3.68538 13.1739 8 13.1739ZM8 0C10.9391 0 13.294 2.35402 13.294 5.29105C13.294 8.22808 10.9391 10.5831 8 10.5831C5.0619 10.5831 2.70601 8.22808 2.70601 5.29105C2.70601 2.35402 5.0619 0 8 0Z"
+                                fill="#226AB6" />
+                        </svg>
+                    </span>
+                </li>
+                <li>
+                    <hr>
+                </li>
+                <!-- button to open mobile menu -->
+                <li class="open-mobile-menu ">
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                </li>
+            </ul>
         </div>
-        <!-- mobile profile menu list -->
-        <ul class="mobile-profile-menu-list mywrapper">
-            <li ><a href="userinfo.html">Profil məlumatlarım</a></li>
-            <li><a href="profilepatent.html">Patent və ixtiralarım</a></li>
-            <li><a href="#">İdeyalarım</a></li>
-            <li><a href="#">İnvestor olduqlarım</a></li>
-            <li><a href="#">Start Up’larım</a></li>
-            <li><a href="#">Araşdırma mövzularım</a></li>
-            <li><a href="#">Startap (İnkubasiya)</a></li>
-            <li class="mailbox"><a href="mailbox.html">Mailbox <span class="messages-count">1</span> </a> </li>
-        </ul>
+        <!-- mobile profile menu -->
+        <div class="mobile-profile-menu">
+            <div class="mobile-profile-menu-heading">
+                <!--mobile profile menu userinfo -->
+                <div class="mobile-profile-menu-userinfo">
+                    <!-- user avatar -->
+                    <span class="mobile-profile-menu-avatar">
+                        <svg width="47" height="48" viewBox="0 0 47 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="23.4336" cy="24.0799" r="23.0221" fill="#256EB9" stroke="white"
+                                stroke-width="0.823129" />
+                            <path
+                                d="M23.5455 29.1611C29.6252 29.1611 34.7559 30.1465 34.7559 33.9483C34.7559 37.7516 29.5916 38.702 23.5455 38.702C17.4671 38.702 12.335 37.7166 12.335 33.9148C12.335 30.1115 17.4993 29.1611 23.5455 29.1611ZM23.5455 10.7475C27.664 10.7475 30.964 14.0378 30.964 18.1429C30.964 22.2481 27.664 25.5398 23.5455 25.5398C19.4283 25.5398 16.1269 22.2481 16.1269 18.1429C16.1269 14.0378 19.4283 10.7475 23.5455 10.7475Z"
+                                fill="white" />
+                        </svg>
+                        <span class="messages-count">
+                            1
+                        </span>
+                    </span>
+                    <p class="mobile-profile-menu-username">Rashad Abdullayev</p>
+                </div>
+                <span class="mobile-profile-menu-rectangle">
+                    <svg width="13" height="7" viewBox="0 0 13 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M0.184239 0.180905C0.40756 -0.0383737 0.75702 -0.0583081 1.00327 0.121101L1.07383 0.180905L6.5 5.50859L11.9262 0.180905C12.1495 -0.0383737 12.499 -0.0583081 12.7452 0.121101L12.8158 0.180905C13.0391 0.400183 13.0594 0.743318 12.8767 0.985116L12.8158 1.05439L6.94479 6.8191C6.72147 7.03837 6.37201 7.05831 6.12576 6.8789L6.05521 6.8191L0.184239 1.05439C-0.0614131 0.813183 -0.0614131 0.422111 0.184239 0.180905Z"
+                            fill="#1C4570" />
+                    </svg>
 
-        <!-- mobile profile menu foot -->
-        <div class="mobile-profile-menu-foot">
-            <a href="#">Çıxış</a>
-        </div>
-    </div>
-
-    <!-- mobile menu -->
-    <ul class="mobile-menu">
-        <li class="mobile-menu-services "><a href="#">Xidmətlər <svg class="xidmetler-rectangle" width="13"
-                    height="7" viewBox="0 0 13 7" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path
-                        d="M0.184239 0.180905C0.40756 -0.0383737 0.75702 -0.0583081 1.00327 0.121101L1.07383 0.180905L6.5 5.50859L11.9262 0.180905C12.1495 -0.0383737 12.499 -0.0583081 12.7452 0.121101L12.8158 0.180905C13.0391 0.400183 13.0594 0.743318 12.8767 0.985116L12.8158 1.05439L6.94479 6.8191C6.72147 7.03837 6.37201 7.05831 6.12576 6.8789L6.05521 6.8191L0.184239 1.05439C-0.0614131 0.813183 -0.0614131 0.422111 0.184239 0.180905Z"
-                        fill="#1C4570" />
-                </svg>
-            </a>
-
-
-        </li>
-        <!-- services dropdown in mobile menu -->
-        <li>
-            <ul class="services-dropdown">
-                <li><a href="patent.html">Patent və ixtiralar</a></li>
-                <li><a href="#">Tədqiqatçı</a></li>
-                <li><a href="#">İnvestor</a></li>
-                <li><a href="#">KOB</a></li>
-                <li><a href="#">Layihə və qrantlar</a></li>
-                <li><a href="#">Mentorluq və təlimlər</a></li>
+                </span>
+            </div>
+            <!-- mobile profile menu list -->
+            <ul class="mobile-profile-menu-list mywrapper">
+                <li><a href="userinfo.html">Profil məlumatlarım</a></li>
+                <li><a href="profilepatent.html">Patent və ixtiralarım</a></li>
+                <li><a href="#">İdeyalarım</a></li>
+                <li><a href="#">İnvestor olduqlarım</a></li>
+                <li><a href="#">Start Up’larım</a></li>
+                <li><a href="#">Araşdırma mövzularım</a></li>
                 <li><a href="#">Startap (İnkubasiya)</a></li>
-                <li><a href="#">Texnologiyaların transferi və
-                        kommersiyalaşdırma</a></li>
-                <li><a href="#">E-bülten</a></li>
+                <li class="mailbox"><a href="mailbox.html">Mailbox <span class="messages-count">1</span> </a> </li>
             </ul>
-        </li>
-        <li><a href="news.html">Xəbərlər </a></li>
-        <li class="mobile-menu-about"><a href="#">Haqqımızda
-                <svg class="xidmetler-rectangle" width="13" height="7" viewBox="0 0 13 7" fill="none"
-                    xmlns="http://www.w3.org/2000/svg">
-                    <path
-                        d="M0.184239 0.180905C0.40756 -0.0383737 0.75702 -0.0583081 1.00327 0.121101L1.07383 0.180905L6.5 5.50859L11.9262 0.180905C12.1495 -0.0383737 12.499 -0.0583081 12.7452 0.121101L12.8158 0.180905C13.0391 0.400183 13.0594 0.743318 12.8767 0.985116L12.8158 1.05439L6.94479 6.8191C6.72147 7.03837 6.37201 7.05831 6.12576 6.8789L6.05521 6.8191L0.184239 1.05439C-0.0614131 0.813183 -0.0614131 0.422111 0.184239 0.180905Z"
-                        fill="#1C4570" />
-                </svg>
-            </a></li>
-        <!-- about dropdown in mobile menu -->
-        <li>
-            <ul class="about-dropdown">
-                <li><a href="abouttotal.html">Ümumi</a></li>
-                <li><a href="aboutmission.html">Missiyamız</a></li>
-                <li><a href="aboutmission2.html">Məqsədimiz</a></li>
-                <li><a href="#">Fəaliyyət sahələrimiz</a></li>
-                <li><a href="#">KOB</a></li>
-                <li><a href="#">Əlavə xidmətlərimiz</a></li>
-                <li><a href="#">Anket formu</a></li>
-                <li><a href="#">AMEA YTP istismar proqramı</a></li>
-            </ul>
-        </li>
-        <li><a href="contact.html">Əlaqə</a></li>
-        <li><a href="partners.html">Partnyorlar</a></li>
-        <li><a href="authorization.html">Giriş</a></li>
-        <li><a href="signup.html" class="mobile-menu-signup">Qeydiyyat</a></li>
-    </ul>
-</header>
+
+            <!-- mobile profile menu foot -->
+            <div class="mobile-profile-menu-foot">
+                <a href="#">Çıxış</a>
+            </div>
+        </div>
+
+        <!-- mobile menu -->
+        <ul class="mobile-menu">
+            <li class="mobile-menu-services "><a href="#">Xidmətlər <svg class="xidmetler-rectangle" width="13"
+                        height="7" viewBox="0 0 13 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M0.184239 0.180905C0.40756 -0.0383737 0.75702 -0.0583081 1.00327 0.121101L1.07383 0.180905L6.5 5.50859L11.9262 0.180905C12.1495 -0.0383737 12.499 -0.0583081 12.7452 0.121101L12.8158 0.180905C13.0391 0.400183 13.0594 0.743318 12.8767 0.985116L12.8158 1.05439L6.94479 6.8191C6.72147 7.03837 6.37201 7.05831 6.12576 6.8789L6.05521 6.8191L0.184239 1.05439C-0.0614131 0.813183 -0.0614131 0.422111 0.184239 0.180905Z"
+                            fill="#1C4570" />
+                    </svg>
+                </a>
 
 
-<!-- HEADER SIDE  END-->
-    
+            </li>
+            <!-- services dropdown in mobile menu -->
+            <li>
+                <ul class="services-dropdown">
+                    <li><a href="patent.html">Patent və ixtiralar</a></li>
+                    <li><a href="#">Tədqiqatçı</a></li>
+                    <li><a href="#">İnvestor</a></li>
+                    <li><a href="#">KOB</a></li>
+                    <li><a href="#">Layihə və qrantlar</a></li>
+                    <li><a href="#">Mentorluq və təlimlər</a></li>
+                    <li><a href="#">Startap (İnkubasiya)</a></li>
+                    <li><a href="#">Texnologiyaların transferi və
+                            kommersiyalaşdırma</a></li>
+                    <li><a href="#">E-bülten</a></li>
+                </ul>
+            </li>
+            <li><a href="news.html">Xəbərlər </a></li>
+            <li class="mobile-menu-about"><a href="#">Haqqımızda
+                    <svg class="xidmetler-rectangle" width="13" height="7" viewBox="0 0 13 7" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M0.184239 0.180905C0.40756 -0.0383737 0.75702 -0.0583081 1.00327 0.121101L1.07383 0.180905L6.5 5.50859L11.9262 0.180905C12.1495 -0.0383737 12.499 -0.0583081 12.7452 0.121101L12.8158 0.180905C13.0391 0.400183 13.0594 0.743318 12.8767 0.985116L12.8158 1.05439L6.94479 6.8191C6.72147 7.03837 6.37201 7.05831 6.12576 6.8789L6.05521 6.8191L0.184239 1.05439C-0.0614131 0.813183 -0.0614131 0.422111 0.184239 0.180905Z"
+                            fill="#1C4570" />
+                    </svg>
+                </a></li>
+            <!-- about dropdown in mobile menu -->
+            <li>
+                <ul class="about-dropdown">
+                    <li><a href="abouttotal.html">Ümumi</a></li>
+                    <li><a href="aboutmission.html">Missiyamız</a></li>
+                    <li><a href="aboutmission2.html">Məqsədimiz</a></li>
+                    <li><a href="#">Fəaliyyət sahələrimiz</a></li>
+                    <li><a href="#">KOB</a></li>
+                    <li><a href="#">Əlavə xidmətlərimiz</a></li>
+                    <li><a href="#">Anket formu</a></li>
+                    <li><a href="#">AMEA YTP istismar proqramı</a></li>
+                </ul>
+            </li>
+            <li><a href="contact.html">Əlaqə</a></li>
+            <li><a href="partners.html">Partnyorlar</a></li>
+            <li><a href="authorization.html">Giriş</a></li>
+            <li><a href="signup.html" class="mobile-menu-signup">Qeydiyyat</a></li>
+        </ul>
+    </header>
+
+
+    <!-- HEADER SIDE  END-->
+
     <div class="profile-patent-page mywrapper">
         <!-- profile links -->
         <div class="page-link-heading ">
@@ -253,7 +255,7 @@
                             fill="#4C4C4C" />
                     </svg>
                 </span> <a href="profilepatent.html">Patent və ixtiralarım</a> </p>
-                <!-- links end -->
+            <!-- links end -->
         </div>
         <!-- profile links end -->
 
@@ -290,72 +292,102 @@
             <tbody>
                 <tr>
                     <td class="userpatent-svg">
-                        <span><svg width="19" height="14" viewBox="0 0 19 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <rect x="0.0839844" width="18.0292" height="2" fill="white"/>
-                            <rect x="0.0839844" y="6" width="18.0292" height="2" fill="white"/>
-                            <rect x="0.0839844" y="12" width="18.0292" height="2" fill="white"/>
+                        <span class="userpatent-svg-click"><svg width="21" height="14" viewBox="0 0 19 14" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <rect x="0.0839844" width="18.0292" height="2" fill="white" />
+                                <rect x="0.0839844" y="6" width="18.0292" height="2" fill="white" />
+                                <rect x="0.0839844" y="12" width="18.0292" height="2" fill="white" />
                             </svg>
-                            </span>
+                        </span>
+
+                        <ul class="edit-dropdown">
+                            <li><button class="cancel">Cancel</button></li>
+                            <li><button class="edit">Edit</button></li>
+                        </ul>
                     </td>
-                    <td>  Lorem ipsum</td>
-                    <td>  Lorem ipsum</td>
-                    <td>  Lorem ipsum</td>
+                    <td> Lorem ipsum</td>
+                    <td> Lorem ipsum</td>
+                    <td> Lorem ipsum</td>
                 </tr>
 
                 <tr>
                     <td class="userpatent-svg">
-                        <span><svg width="19" height="14" viewBox="0 0 19 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <rect x="0.0839844" width="18.0292" height="2" fill="white"/>
-                            <rect x="0.0839844" y="6" width="18.0292" height="2" fill="white"/>
-                            <rect x="0.0839844" y="12" width="18.0292" height="2" fill="white"/>
+                        <span class="userpatent-svg-click"><svg width="21" height="14" viewBox="0 0 19 14" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <rect x="0.0839844" width="18.0292" height="2" fill="white" />
+                                <rect x="0.0839844" y="6" width="18.0292" height="2" fill="white" />
+                                <rect x="0.0839844" y="12" width="18.0292" height="2" fill="white" />
                             </svg>
-                            </span>
+                        </span>
+
+                        <ul class="edit-dropdown">
+                            <li><button class="cancel">Cancel</button></li>
+                            <li><button class="edit">Edit</button></li>
+                        </ul>
                     </td>
-                    <td>  Lorem ipsum</td>
-                    <td>  Lorem ipsum</td>
-                    <td>  Lorem ipsum</td>
+                    <td> Lorem ipsum</td>
+                    <td> Lorem ipsum</td>
+                    <td> Lorem ipsum</td>
                 </tr>
 
                 <tr>
                     <td class="userpatent-svg">
-                        <span><svg width="19" height="14" viewBox="0 0 19 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <rect x="0.0839844" width="18.0292" height="2" fill="white"/>
-                            <rect x="0.0839844" y="6" width="18.0292" height="2" fill="white"/>
-                            <rect x="0.0839844" y="12" width="18.0292" height="2" fill="white"/>
+                        <span class="userpatent-svg-click"><svg width="21" height="14" viewBox="0 0 19 14" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <rect x="0.0839844" width="18.0292" height="2" fill="white" />
+                                <rect x="0.0839844" y="6" width="18.0292" height="2" fill="white" />
+                                <rect x="0.0839844" y="12" width="18.0292" height="2" fill="white" />
                             </svg>
-                            </span>
+                        </span>
+
+                        <ul class="edit-dropdown">
+                            <li><button class="cancel">Cancel</button></li>
+                            <li><button class="edit">Edit</button></li>
+                        </ul>
                     </td>
-                    <td>  Lorem ipsum</td>
-                    <td>  Lorem ipsum</td>
-                    <td>  Lorem ipsum</td>
+                    <td> Lorem ipsum</td>
+                    <td> Lorem ipsum</td>
+                    <td> Lorem ipsum</td>
                 </tr>
 
                 <tr>
                     <td class="userpatent-svg">
-                        <span><svg width="19" height="14" viewBox="0 0 19 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <rect x="0.0839844" width="18.0292" height="2" fill="white"/>
-                            <rect x="0.0839844" y="6" width="18.0292" height="2" fill="white"/>
-                            <rect x="0.0839844" y="12" width="18.0292" height="2" fill="white"/>
+                        <span class="userpatent-svg-click"><svg width="21" height="14" viewBox="0 0 19 14" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <rect x="0.0839844" width="18.0292" height="2" fill="white" />
+                                <rect x="0.0839844" y="6" width="18.0292" height="2" fill="white" />
+                                <rect x="0.0839844" y="12" width="18.0292" height="2" fill="white" />
                             </svg>
-                            </span>
+                        </span>
+
+                        <ul class="edit-dropdown">
+                            <li><button class="cancel">Cancel</button></li>
+                            <li><button class="edit">Edit</button></li>
+                        </ul>
                     </td>
-                    <td>  Lorem ipsum</td>
-                    <td>  Lorem ipsum</td>
-                    <td>  Lorem ipsum</td>
+                    <td> Lorem ipsum</td>
+                    <td> Lorem ipsum</td>
+                    <td> Lorem ipsum</td>
                 </tr>
 
                 <tr>
                     <td class="userpatent-svg">
-                        <span><svg width="19" height="14" viewBox="0 0 19 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <rect x="0.0839844" width="18.0292" height="2" fill="white"/>
-                            <rect x="0.0839844" y="6" width="18.0292" height="2" fill="white"/>
-                            <rect x="0.0839844" y="12" width="18.0292" height="2" fill="white"/>
+                        <span class="userpatent-svg-click"><svg width="21" height="14" viewBox="0 0 19 14" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <rect x="0.0839844" width="18.0292" height="2" fill="white" />
+                                <rect x="0.0839844" y="6" width="18.0292" height="2" fill="white" />
+                                <rect x="0.0839844" y="12" width="18.0292" height="2" fill="white" />
                             </svg>
-                            </span>
+                        </span>
+
+                        <ul class="edit-dropdown">
+                            <li><button class="cancel">Cancel</button></li>
+                            <li><button class="edit">Edit</button></li>
+                        </ul>
                     </td>
-                    <td>  Lorem ipsum</td>
-                    <td>  Lorem ipsum</td>
-                    <td>  Lorem ipsum</td>
+                    <td> Lorem ipsum</td>
+                    <td> Lorem ipsum</td>
+                    <td> Lorem ipsum</td>
                 </tr>
             </tbody>
         </table>
@@ -437,19 +469,23 @@
 
             <div class="footer-lang">
                 <h3>Dil</h3>
-                <ul class="select-lang-footer">
-                    <li>
-                        <h2> Azərbaycan dili </h2> <span class="open-select-lang-footer"> <svg width="9" height="5"
-                                viewBox="0 0 9 5" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                    d="M0.12755 0.129218C0.282157 -0.0274098 0.52409 -0.0416487 0.694575 0.086501L0.743417 0.129218L4.5 3.93471L8.25658 0.129218C8.41119 -0.0274098 8.65312 -0.0416487 8.82361 0.086501L8.87245 0.129218C9.02706 0.285845 9.04111 0.530941 8.91461 0.703654L8.87245 0.753135L4.80793 4.87078C4.65333 5.02741 4.41139 5.04165 4.24091 4.9135L4.19207 4.87078L0.12755 0.753135C-0.0425168 0.580845 -0.0425168 0.301508 0.12755 0.129218Z"
-                                    fill="white" />
-                            </svg>
-                        </span>
+
+                <ul class="footer-select-language">
+                    <span class="open-footer-dropdown">
+                        <svg width="9" height="5" viewBox="0 0 9 5" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M0.12755 0.129218C0.282157 -0.0274098 0.52409 -0.0416487 0.694575 0.086501L0.743417 0.129218L4.5 3.93471L8.25658 0.129218C8.41119 -0.0274098 8.65312 -0.0416487 8.82361 0.086501L8.87245 0.129218C9.02706 0.285845 9.04111 0.530941 8.91461 0.703654L8.87245 0.753135L4.80793 4.87078C4.65333 5.02741 4.41139 5.04165 4.24091 4.9135L4.19207 4.87078L0.12755 0.753135C-0.0425168 0.580845 -0.0425168 0.301508 0.12755 0.129218Z"
+                                fill="white" />
+                        </svg>
+                    </span>
+                    <li class="selected-lang">
+                        <h2> Azərbaycan dili </h2>
                     </li>
+
                     <li>
                         <h2> English </h2>
                     </li>
+
                     <li>
                         <h2>Русский язык</h2>
                     </li>
@@ -492,6 +528,25 @@
     </footer>
     <!-- FOOTER SIDE END -->
 
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+        integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+
     <script src="js/main.js"></script>
+    <script>
+        
+       $('.userpatent-svg-click').on('click', function(){
+    
+            $(this).closest('.userpatent-svg').find('.edit-dropdown').toggleClass('active')
+        
+         
+        
+
+
+       })
+    </script>
 </body>
+
 </html>
