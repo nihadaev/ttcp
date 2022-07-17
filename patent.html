@@ -5,8 +5,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
     <title>TTCP</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
@@ -15,19 +16,19 @@
         <!-- logo -->
         <div class="mywrapper header">
             <div class="logo">
-                <a href="/"><img src="img/logo.png" alt="logo"></a>
+                <a href="index.html"><img src="img/logo.png" alt="logo"></a>
             </div>
 
             <!-- NAVBAR -->
             <nav>
                 <!-- page links -->
                 <ul>
-                    <li><a href="/" class="active">Ana səhifə</a></li>
-                    <li class="has-dropdown"><a href="">Xidmətlər</a>
+                    <li><a href="index.html" >Ana səhifə</a></li>
+                    <li class="has-dropdown"><a href="" class="active">Xidmətlər</a>
                         <div class="kvadrat"></div>
                         <ul class="mydropdown">
 
-                            <li><a href="patent.html">Patent və ixtiralar</a></li>
+                            <li><a href="patent.html" class="active">Patent və ixtiralar</a></li>
                             <li><a href="#">Tədqiqatçı</a></li>
                             <li><a href="#">İnvestor</a></li>
                             <li><a href="#">KOB</a></li>
@@ -240,22 +241,28 @@
             <li><a href="signup.html" class="mobile-menu-signup">Qeydiyyat</a></li>
         </ul>
     </header>
-
-
     <!-- HEADER SIDE  END-->
+    <!-- patent page -->
     <section class="patent-section mywrapper">
+        <!-- links -->
         <div class="page-link-heading">
-            <p> <a href="#">Xidmətlər</a> <span><svg width="7" height="13" viewBox="0 0 7 13" fill="none"
-                        xmlns="http://www.w3.org/2000/svg">
+            <p> <a href="#">Xidmətlər</a>
+                <span>
+                    <svg width="7" height="13" viewBox="0 0 7 13" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path
                             d="M0.180905 12.8158C-0.0383737 12.5924 -0.0583081 12.243 0.121101 11.9967L0.180905 11.9262L5.50859 6.5L0.180905 1.07382C-0.0383737 0.850505 -0.0583081 0.501045 0.121101 0.25479L0.180905 0.18424C0.400183 -0.0390806 0.743318 -0.0593824 0.985116 0.123334L1.05439 0.18424L6.8191 6.05521C7.03837 6.27853 7.05831 6.62799 6.8789 6.87424L6.8191 6.94479L1.05439 12.8158C0.813183 13.0614 0.422111 13.0614 0.180905 12.8158Z"
                             fill="#4C4C4C" />
                     </svg>
-                </span> <a href="#">Patent və ixtiralar</a> </p>
+                </span>
+                <!-- selected page -->
+                <a href="patent.html">Patent və ixtiralar</a>
+            </p>
         </div>
-
+        <!-- patent page body -->
         <div class="patent-section-body">
+
             <div class="patent-section-body-head">
+                <!-- open modal in mobile version -->
                 <h3 class="open-modal">
                     <span>
                         <svg width="36" height="19" viewBox="0 0 36 19" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -263,21 +270,28 @@
                             <rect y="7.2002" width="26.1176" height="4.2" rx="2.1" fill="#8E8E8E" />
                             <rect y="14.4004" width="16.2353" height="4.2" rx="2.1" fill="#8E8E8E" />
                         </svg>
-
                     </span>
                     Filtrlər
                 </h3>
             </div>
-
+            <!-- content -->
             <div class="patent-section-body-content">
+                <!-- patent filter -->
                 <div class="patent-section-body-filter">
                     <div class="patent-filter-menu">
+                        <!-- heading -->
                         <div class="patent-filter-menu-head">
                             <h2>Patentim var</h2>
                         </div>
+                        <!-- patents filter list -->
                         <ul class="patent-filter-menu-body">
+                            <!-- one li one filter -->
                             <li>
-                                <p> <span class="filter-check"></span> <span>Sağlamlıq və tibbi texnologiyalar</span>
+                                <p>
+                                    <!-- add for filter-check active class if user selected this filter -->
+                                    <span class="filter-check"></span>
+                                    <!-- filter name -->
+                                    <span>Sağlamlıq və tibbi texnologiyalar</span>
                                 </p>
                             </li>
                             <li>
@@ -339,20 +353,21 @@
                             </li>
                         </ul>
                     </div>
-                    <div class="patent-filter-content">
-
-                    </div>
                 </div>
-
+                <!-- patent cards -->
                 <div class="patent-section-body-cards">
+                    <!-- one a tag is one patent card -->
                     <a href="patentinfo.html">
                         <div class="mycard">
+                            <!-- patent image -->
                             <div class=" mycard-img">
                                 <img src="img/latenewscard1.png" alt="news">
                             </div>
                             <div class="mycard-body">
                                 <div class="mycard-text ">
+                                    <!-- patent heading -->
                                     <h3>Lorem ipsum.</h3>
+                                    <!-- patent info -->
                                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis
                                         molestie, dictum
                                         est a, mattis tellus. Sed dignissim, metus nec fringilla accumsan, risus
@@ -361,8 +376,9 @@
                                     <span class="etrafli">Ətraflı</span>
                                 </div>
                             </div>
-    
+
                             <div class="mycard-foot">
+                                <!-- patent date -->
                                 <h4>21.05.2022</h4>
                             </div>
                         </div>
@@ -384,7 +400,7 @@
                                     <span class="etrafli">Ətraflı</span>
                                 </div>
                             </div>
-    
+
                             <div class="mycard-foot">
                                 <h4>21.05.2022</h4>
                             </div>
@@ -407,7 +423,7 @@
                                     <span class="etrafli">Ətraflı</span>
                                 </div>
                             </div>
-    
+
                             <div class="mycard-foot">
                                 <h4>21.05.2022</h4>
                             </div>
@@ -430,7 +446,7 @@
                                     <span class="etrafli">Ətraflı</span>
                                 </div>
                             </div>
-    
+
                             <div class="mycard-foot">
                                 <h4>21.05.2022</h4>
                             </div>
@@ -453,36 +469,37 @@
                                     <span class="etrafli">Ətraflı</span>
                                 </div>
                             </div>
-    
+
                             <div class="mycard-foot">
                                 <h4>21.05.2022</h4>
                             </div>
                         </div>
                     </a>
 
-                   <a href="#">
-                    <div class="mycard">
-                        <div class=" mycard-img">
-                            <img src="img/latenewscard2.png" alt="news">
-                        </div>
-                        <div class="mycard-body">
-                            <div class="mycard-text ">
-                                <h3>Lorem ipsum.</h3>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis
-                                    molestie, dictum
-                                    est a, mattis tellus. Sed dignissim, metus nec fringilla accumsan, risus
-                                    sem
-                                    sollicitudin lacus, ut interdum tellus elit sed</p>
-                                <span class="etrafli">Ətraflı<span>
+                    <a href="#">
+                        <div class="mycard">
+                            <div class=" mycard-img">
+                                <img src="img/latenewscard2.png" alt="news">
+                            </div>
+                            <div class="mycard-body">
+                                <div class="mycard-text ">
+                                    <h3>Lorem ipsum.</h3>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis
+                                        molestie, dictum
+                                        est a, mattis tellus. Sed dignissim, metus nec fringilla accumsan, risus
+                                        sem
+                                        sollicitudin lacus, ut interdum tellus elit sed</p>
+                                    <span class="etrafli">Ətraflı<span>
+                                </div>
+                            </div>
+
+                            <div class="mycard-foot">
+                                <h4>21.05.2022</h4>
                             </div>
                         </div>
 
-                        <div class="mycard-foot">
-                            <h4>21.05.2022</h4>
-                        </div>
-                    </div>
-
-                   </a>
+                    </a>
+                    <!-- patent pages -->
                     <div class="patent-section-body-pages">
                         <ul>
                             <li> <a href="#" class="active">1</a> </li>
@@ -490,7 +507,8 @@
                             <li><a href="#">3</a></li>
                             <li><a href="#">4</a></li>
                             <li><a href="#">5</a></li>
-                            <li><a href="#"><svg width="7" height="13" viewBox="0 0 7 13" fill="none"
+                            <li><a href="#">
+                                    <svg width="7" height="13" viewBox="0 0 7 13" fill="none"
                                         xmlns="http://www.w3.org/2000/svg">
                                         <path
                                             d="M0.180905 12.8158C-0.0383737 12.5924 -0.0583081 12.243 0.121101 11.9967L0.180905 11.9262L5.50859 6.5L0.180905 1.07382C-0.0383736 0.850505 -0.058308 0.501045 0.121102 0.25479L0.180905 0.18424C0.400183 -0.0390806 0.743318 -0.0593824 0.985116 0.123334L1.05439 0.18424L6.8191 6.05521C7.03837 6.27853 7.05831 6.62799 6.8789 6.87424L6.8191 6.94479L1.05439 12.8158C0.813183 13.0614 0.422111 13.0614 0.180905 12.8158Z"
@@ -504,9 +522,10 @@
             </div>
 
         </div>
-
+        <!-- patent filter modal -->
         <div class="patent-filter-modal">
             <div class="patent-filter-modal-content">
+                <!-- close modal button -->
                 <span class="close-button">
                     <svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <rect x="17.0585" y="18.3848" width="24" height="2" rx="0.999999"
@@ -517,7 +536,9 @@
                 </span>
                 <!-- patent filter head -->
                 <div class="patent-modal-content-head">
-                    <p class="close-filter"> Filtrlər <span ><svg width="36" height="19" viewBox="0 0 36 19" fill="none"
+                    <p class="close-filter"> Filtrlər
+                        <span>
+                            <svg width="36" height="19" viewBox="0 0 36 19" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <rect width="36" height="4.2" rx="2.1" transform="matrix(-1 0 0 1 36 0)" fill="white" />
                                 <rect width="26.1176" height="4.2" rx="2.1" transform="matrix(-1 0 0 1 36 7.19995)"
@@ -525,80 +546,61 @@
                                 <rect width="16.2353" height="4.2" rx="2.1" transform="matrix(-1 0 0 1 36 14.3999)"
                                     fill="white" />
                             </svg>
-                        </span> </p>
+                        </span>
+                    </p>
                 </div>
                 <!-- filter select lists -->
                 <ul class="patent-modal-content-body">
-                    <!-- filter select -->
+                    <!-- filter select, one li one filter -->
                     <li>
-                        <span><svg width="19" height="19" viewBox="0 0 19 19" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <circle cx="9.5" cy="9.5" r="9.5" fill="#D9D9D9" />
-                            </svg>
+                        <!-- when user select add class active -->
+                        <span class="filter-check">
+                            
                         </span>
+                        <!-- filter name -->
                         <a href="#">Sağlamlıq və tibbi texnologiyalar</a>
                     </li>
 
                     <li>
-                        <span><svg width="19" height="19" viewBox="0 0 19 19" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <circle cx="9.5" cy="9.5" r="9.5" fill="#D9D9D9" />
-                            </svg>
+                        <span class="filter-check">
+                            
                         </span>
                         <a href="#">İdarəetmə texnologiyaları</a>
                     </li>
 
                     <li>
-                        <span><svg width="19" height="19" viewBox="0 0 19 19" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <circle cx="9.5" cy="9.5" r="9.5" fill="#D9D9D9" />
-                            </svg>
+                        <span class="filter-check">
                         </span>
                         <a href="#">Geoloji texnologiyalar</a>
                     </li>
 
                     <li>
-                        <span><svg width="19" height="19" viewBox="0 0 19 19" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <circle cx="9.5" cy="9.5" r="9.5" fill="#D9D9D9" />
-                            </svg>
+                        <span class="filter-check">
                         </span>
                         <a href="#">Kimya və neft-kimya texnologiyaları</a>
                     </li>
 
                     <li>
-                        <span><svg width="19" height="19" viewBox="0 0 19 19" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <circle cx="9.5" cy="9.5" r="9.5" fill="#D9D9D9" />
-                            </svg>
+                        <span class="filter-check">
                         </span>
                         <a href="#">Mexanika texnologiyaları</a>
                     </li>
 
                     <li>
-                        <span><svg width="19" height="19" viewBox="0 0 19 19" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <circle cx="9.5" cy="9.5" r="9.5" fill="#D9D9D9" />
-                            </svg>
+                        <span class="filter-check">
                         </span>
                         <a href="#">Nanotexnologiyalar</a>
                     </li>
 
                     <li>
-                        <span><svg width="19" height="19" viewBox="0 0 19 19" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <circle cx="9.5" cy="9.5" r="9.5" fill="#D9D9D9" />
-                            </svg>
+                        <span class="filter-check">
                         </span>
                         <a href="#">Informasiya kommunikasiya
                             texnologiyaları</a>
                     </li>
 
                     <li>
-                        <span><svg width="19" height="19" viewBox="0 0 19 19" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <circle cx="9.5" cy="9.5" r="9.5" fill="#D9D9D9" />
-                            </svg>
+                        <span class="filter-check">
                         </span>
                         <a href="#">Tikinti texnologiyaları</a>
                     </li>
@@ -614,10 +616,12 @@
     <!-- FOOTER SIDE -->
     <footer>
         <div class="mywrapper myfooter">
+            <!-- footer logo -->
             <div class="footer-logo">
                 <img src="img/footlogo.png" alt="">
             </div>
 
+            <!-- footer contact form -->
             <ul class="footer-contact">
                 <li>
                     <h3>Xəbərlər üçün izləmədə qalın</h3>
@@ -629,21 +633,30 @@
                     </form>
                 </li>
             </ul>
-
+            <!-- footer pages links -->
             <ul class="footer-nav">
-                <li><a href="/">Ana səhifə</a></li>
-                <li><a href="#">Xidmətlər</a></li>
-                <li><a href="#">Xəbərlər</a></li>
-                <li><a href="#">Haqqımızda</a></li>
-                <li><a href="#">Əlaqə</a></li>
+                <li><a href="index.html">Ana səhifə</a></li>
+                <li><a href="patent.html">Xidmətlər</a></li>
+                <li><a href="news.html">Xəbərlər</a></li>
+                <li><a href="abouttotal.html">Haqqımızda</a></li>
+                <li><a href="contact.html">Əlaqə</a></li>
             </ul>
 
+            <!-- footer authorization links -->
             <ul class="footer-links">
-                <li><a href="#">Giriş</a></li>
-                <li><a href="#">Qeydiyyat</a></li>
-                <li><a href="#">FAQs</a></li>
                 <li>
+                    <a href="authorization.html">Giriş</a>
+                </li>
+                <li>
+                    <a href="signup.html">Qeydiyyat</a>
+                </li>
+                <li>
+                    <a href="#">FAQs</a>
+                </li>
+                <li>
+                    <!-- footer social links -->
                     <ul class="footer-links-social">
+                        <!-- facebook -->
                         <li>
                             <a href="#">
                                 <svg width="27" height="27" viewBox="0 0 27 27" fill="none"
@@ -655,6 +668,7 @@
 
                             </a>
                         </li>
+                        <!-- instagram -->
                         <li>
                             <a href="#">
                                 <svg width="27" height="27" viewBox="0 0 27 27" fill="none"
@@ -666,6 +680,7 @@
 
                             </a>
                         </li>
+                        <!-- twitter -->
                         <li>
                             <a href="#">
                                 <svg width="33" height="27" viewBox="0 0 33 27" fill="none"
@@ -680,29 +695,37 @@
                     </ul>
                 </li>
             </ul>
-
+            <!-- footer select language -->
             <div class="footer-lang">
                 <h3>Dil</h3>
-                <ul>
-                    <li>
-                        <h2> Azərbaycan dili </h2> <span> <svg width="9" height="5" viewBox="0 0 9 5" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                    d="M0.12755 0.129218C0.282157 -0.0274098 0.52409 -0.0416487 0.694575 0.086501L0.743417 0.129218L4.5 3.93471L8.25658 0.129218C8.41119 -0.0274098 8.65312 -0.0416487 8.82361 0.086501L8.87245 0.129218C9.02706 0.285845 9.04111 0.530941 8.91461 0.703654L8.87245 0.753135L4.80793 4.87078C4.65333 5.02741 4.41139 5.04165 4.24091 4.9135L4.19207 4.87078L0.12755 0.753135C-0.0425168 0.580845 -0.0425168 0.301508 0.12755 0.129218Z"
-                                    fill="white" />
-                            </svg>
-                        </span>
+
+                <ul class="footer-select-language">
+                    <!-- rectangle for open or close dropdown -->
+                    <span class="open-footer-dropdown">
+                        <svg width="9" height="5" viewBox="0 0 9 5" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M0.12755 0.129218C0.282157 -0.0274098 0.52409 -0.0416487 0.694575 0.086501L0.743417 0.129218L4.5 3.93471L8.25658 0.129218C8.41119 -0.0274098 8.65312 -0.0416487 8.82361 0.086501L8.87245 0.129218C9.02706 0.285845 9.04111 0.530941 8.91461 0.703654L8.87245 0.753135L4.80793 4.87078C4.65333 5.02741 4.41139 5.04165 4.24091 4.9135L4.19207 4.87078L0.12755 0.753135C-0.0425168 0.580845 -0.0425168 0.301508 0.12755 0.129218Z"
+                                fill="white" />
+                        </svg>
+                    </span>
+                    <!-- first language, if user change language give 'selected-lang' for selected li -->
+                    <li class="selected-lang">
+                        <h2> Azərbaycan dili </h2>
                     </li>
+
                     <li>
                         <h2> English </h2>
                     </li>
+
                     <li>
                         <h2>Русский язык</h2>
                     </li>
                 </ul>
             </div>
 
+            <!-- footer social links -->
             <ul class="footer-links-social">
+                <!-- facebook -->
                 <li>
                     <a href="#">
                         <svg width="27" height="27" viewBox="0 0 27 27" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -713,6 +736,7 @@
 
                     </a>
                 </li>
+                <!-- instagram -->
                 <li>
                     <a href="#">
                         <svg width="27" height="27" viewBox="0 0 27 27" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -723,6 +747,7 @@
 
                     </a>
                 </li>
+                <!-- twitter -->
                 <li>
                     <a href="#">
                         <svg width="33" height="27" viewBox="0 0 33 27" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -741,32 +766,47 @@
 
     <script src="js/main.js"></script>
     <script>
+        // elements for open filters modal in mobile
+        // open element
         let openmodal = document.querySelector('.open-modal')
+        // modal
         let modal = document.querySelector('.patent-filter-modal')
+        // get it for use stoppropagation
         let modalcont = document.querySelector('.patent-filter-modal-content')
+        // close with x button
         let closemodal = document.querySelector('.close-button')
+        // close with click on filter
         let closemodal2 = document.querySelector('.close-filter')
-        
 
+        // open filters modal
         openmodal.addEventListener('click', (event) => {
             event.stopPropagation()
+            //for open modal 
             modal.classList.add('active')
+            // for no scroll outside modal
             body.classList.add('overflowHIDDEN')
         })
-
+        // close filter modal
         closemodal.addEventListener('click', () => {
+            // for close filter modal
             modal.classList.remove('active')
+            // for active scroll otside filter modal
             body.classList.remove('overflowHIDDEN')
         })
+        // close with click on filter
         closemodal2.addEventListener('click', () => {
+            // for close filter modal
             modal.classList.remove('active')
+            // for active scroll outside modal
             body.classList.remove('overflowHIDDEN')
         })
 
+        // for not closing modal when user click on it
         modalcont.addEventListener('click', (event) => {
             event.stopPropagation()
         })
-        window.addEventListener('click',() => {
+        // for closing modal on click outside modal
+        window.addEventListener('click', () => {
             modal.classList.remove('active')
             
             body.classList.remove('overflowHIDDEN')

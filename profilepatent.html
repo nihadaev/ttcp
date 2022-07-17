@@ -5,8 +5,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TTCP</title>
+    <!-- CSS -->
     <link rel="stylesheet" href="css/style.css">
-    <title>Document</title>
+    
 </head>
 
 <body>
@@ -15,14 +17,14 @@
         <!-- logo -->
         <div class="mywrapper header">
             <div class="logo">
-                <a href="/"><img src="img/logo.png" alt="logo"></a>
+                <a href="index.html"><img src="img/logo.png" alt="logo"></a>
             </div>
 
             <!-- NAVBAR -->
             <nav>
                 <!-- page links -->
                 <ul>
-                    <li><a href="/" class="active">Ana səhifə</a></li>
+                    <li><a href="index.html" class="active">Ana səhifə</a></li>
                     <li class="has-dropdown"><a href="">Xidmətlər</a>
                         <div class="kvadrat"></div>
                         <ul class="mydropdown">
@@ -240,21 +242,20 @@
             <li><a href="signup.html" class="mobile-menu-signup">Qeydiyyat</a></li>
         </ul>
     </header>
-
-
     <!-- HEADER SIDE  END-->
-
-    <div class="profile-patent-page mywrapper">
+    <section class="profile-patent-page mywrapper">
         <!-- profile links -->
         <div class="page-link-heading ">
             <!-- links -->
-            <p> <a href="#">Profile</a> <span><svg width="7" height="13" viewBox="0 0 7 13" fill="none"
-                        xmlns="http://www.w3.org/2000/svg">
+            <p> <a href="#">Profile</a>
+                <span>
+                    <svg width="7" height="13" viewBox="0 0 7 13" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path
                             d="M0.180905 12.8158C-0.0383737 12.5924 -0.0583081 12.243 0.121101 11.9967L0.180905 11.9262L5.50859 6.5L0.180905 1.07382C-0.0383737 0.850505 -0.0583081 0.501045 0.121101 0.25479L0.180905 0.18424C0.400183 -0.0390806 0.743318 -0.0593824 0.985116 0.123334L1.05439 0.18424L6.8191 6.05521C7.03837 6.27853 7.05831 6.62799 6.8789 6.87424L6.8191 6.94479L1.05439 12.8158C0.813183 13.0614 0.422111 13.0614 0.180905 12.8158Z"
                             fill="#4C4C4C" />
                     </svg>
-                </span> <a href="profilepatent.html">Patent və ixtiralarım</a> </p>
+                </span> <a href="profilepatent.html">Patent və ixtiralarım</a>
+            </p>
             <!-- links end -->
         </div>
         <!-- profile links end -->
@@ -282,26 +283,32 @@
             <thead>
                 <tr>
                     <td></td>
+                    <!-- name -->
                     <th>Ad</th>
+                    <!-- title -->
                     <th>Məzmun</th>
+                    <!-- date -->
                     <th>Tarix</th>
                 </tr>
             </thead>
-            <!-- patent table end -->
+            <!-- patent table head end -->
 
             <tbody>
                 <tr>
                     <td class="userpatent-svg">
-                        <span class="userpatent-svg-click"><svg width="21" height="14" viewBox="0 0 19 14" fill="none"
+                        <span class="userpatent-svg-click">
+                            <svg width="21" height="14" viewBox="0 0 19 14" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <rect x="0.0839844" width="18.0292" height="2" fill="white" />
                                 <rect x="0.0839844" y="6" width="18.0292" height="2" fill="white" />
                                 <rect x="0.0839844" y="12" width="18.0292" height="2" fill="white" />
                             </svg>
                         </span>
-
+                        <!-- edit dropdown -->
                         <ul class="edit-dropdown">
+                            <!-- close dropdown -->
                             <li><button class="cancel">Cancel</button></li>
+                            <!-- edit info -->
                             <li><button class="edit">Edit</button></li>
                         </ul>
                     </td>
@@ -392,18 +399,17 @@
             </tbody>
         </table>
         <!-- patent table end -->
-
-    </div>
-
-
+    </section>
 
     <!-- FOOTER SIDE -->
     <footer>
         <div class="mywrapper myfooter">
+            <!-- footer logo -->
             <div class="footer-logo">
                 <img src="img/footlogo.png" alt="">
             </div>
 
+            <!-- footer contact form -->
             <ul class="footer-contact">
                 <li>
                     <h3>Xəbərlər üçün izləmədə qalın</h3>
@@ -415,21 +421,30 @@
                     </form>
                 </li>
             </ul>
-
+            <!-- footer pages links -->
             <ul class="footer-nav">
-                <li><a href="/">Ana səhifə</a></li>
-                <li><a href="#">Xidmətlər</a></li>
-                <li><a href="#">Xəbərlər</a></li>
-                <li><a href="#">Haqqımızda</a></li>
-                <li><a href="#">Əlaqə</a></li>
+                <li><a href="index.html">Ana səhifə</a></li>
+                <li><a href="patent.html">Xidmətlər</a></li>
+                <li><a href="news.html">Xəbərlər</a></li>
+                <li><a href="abouttotal.html">Haqqımızda</a></li>
+                <li><a href="contact.html">Əlaqə</a></li>
             </ul>
 
+            <!-- footer authorization links -->
             <ul class="footer-links">
-                <li><a href="#">Giriş</a></li>
-                <li><a href="#">Qeydiyyat</a></li>
-                <li><a href="#">FAQs</a></li>
                 <li>
+                    <a href="authorization.html">Giriş</a>
+                </li>
+                <li>
+                    <a href="signup.html">Qeydiyyat</a>
+                </li>
+                <li>
+                    <a href="#">FAQs</a>
+                </li>
+                <li>
+                    <!-- footer social links -->
                     <ul class="footer-links-social">
+                        <!-- facebook -->
                         <li>
                             <a href="#">
                                 <svg width="27" height="27" viewBox="0 0 27 27" fill="none"
@@ -441,6 +456,7 @@
 
                             </a>
                         </li>
+                        <!-- instagram -->
                         <li>
                             <a href="#">
                                 <svg width="27" height="27" viewBox="0 0 27 27" fill="none"
@@ -452,6 +468,7 @@
 
                             </a>
                         </li>
+                        <!-- twitter -->
                         <li>
                             <a href="#">
                                 <svg width="33" height="27" viewBox="0 0 33 27" fill="none"
@@ -466,11 +483,12 @@
                     </ul>
                 </li>
             </ul>
-
+            <!-- footer select language -->
             <div class="footer-lang">
                 <h3>Dil</h3>
 
                 <ul class="footer-select-language">
+                    <!-- rectangle for open or close dropdown -->
                     <span class="open-footer-dropdown">
                         <svg width="9" height="5" viewBox="0 0 9 5" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path
@@ -478,6 +496,7 @@
                                 fill="white" />
                         </svg>
                     </span>
+                    <!-- first language, if user change language give 'selected-lang' for selected li -->
                     <li class="selected-lang">
                         <h2> Azərbaycan dili </h2>
                     </li>
@@ -492,7 +511,9 @@
                 </ul>
             </div>
 
+            <!-- footer social links -->
             <ul class="footer-links-social">
+                <!-- facebook -->
                 <li>
                     <a href="#">
                         <svg width="27" height="27" viewBox="0 0 27 27" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -503,6 +524,7 @@
 
                     </a>
                 </li>
+                <!-- instagram -->
                 <li>
                     <a href="#">
                         <svg width="27" height="27" viewBox="0 0 27 27" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -513,6 +535,7 @@
 
                     </a>
                 </li>
+                <!-- twitter -->
                 <li>
                     <a href="#">
                         <svg width="33" height="27" viewBox="0 0 33 27" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -536,18 +559,21 @@
 
     <script src="js/main.js"></script>
     <script>
-        
-       $('.userpatent-svg-click').on('click', function(e){
-        e.stopPropagation()
+
+        $('.userpatent-svg-click').on('click', function (e) {
+            e.stopPropagation()
             $(".actived").removeClass("actived")
             $(this).closest('.userpatent-svg').find('.edit-dropdown').toggleClass('actived')
-       })
-       $(document).on("click",(e)=>{
-        $(".actived").removeClass("actived")
-       })
-       $('.edit-dropdown').on('click', (e) => {
-        e.stopPropagation()
-       })
+        })
+        $(".cancel").on("click", (e) => {
+            $(".actived").removeClass("actived")
+        })
+        $(document).on("click", (e) => {
+            $(".actived").removeClass("actived")
+        })
+        $('.edit-dropdown').on('click', (e) => {
+            e.stopPropagation()
+        })
     </script>
 </body>
 

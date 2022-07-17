@@ -5,8 +5,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TTCP</title>
+    <!-- CSS -->
     <link rel="stylesheet" href="css/style.css">
-    <title>Document</title>
 </head>
 
 <body>
@@ -15,14 +16,14 @@
         <!-- logo -->
         <div class="mywrapper header">
             <div class="logo">
-                <a href="/"><img src="img/logo.png" alt="logo"></a>
+                <a href="index.html"><img src="img/logo.png" alt="logo"></a>
             </div>
 
             <!-- NAVBAR -->
             <nav>
                 <!-- page links -->
                 <ul>
-                    <li><a href="/" class="active">Ana səhifə</a></li>
+                    <li><a href="index.html" >Ana səhifə</a></li>
                     <li class="has-dropdown"><a href="">Xidmətlər</a>
                         <div class="kvadrat"></div>
                         <ul class="mydropdown">
@@ -54,7 +55,7 @@
                                     proqramı </a></li>
                         </ul>
                     </li>
-                    <li><a href="contact.html">Əlaqə</a></li>
+                    <li><a href="contact.html" class="active">Əlaqə</a></li>
                     <li><a href="partners.html">Partnyorlar</a></li>
 
                 </ul>
@@ -244,40 +245,44 @@
 
     <!-- HEADER SIDE  END-->
 
-    <div class="contact-page mywrapper">
+    <section class="contact-page mywrapper">
+        <!-- contact page heading -->
         <div class="contact-page-heading">
+            <!-- contact page heading text -->
             <h2 class="headingh2"> Əlaqə </h2>
         </div>
-
+        <!-- contact page body -->
         <div class="contact-page-body">
+            <!-- content -->
             <div class="our-contacts">
+                <!-- phone number -->
                 <ul>
                     <li>
                         <h3>Telefon</h3>
                     </li>
                     <li> <a href="tel:+994504659665">+994504659665</a> </li>
                 </ul>
-
+                <!-- address -->
                 <ul>
                     <li>
                         <h3>Ünvan</h3>
                     </li>
                     <li><a href="#">10 Naxçıvan, Bakı 1005</a></li>
                 </ul>
-
+                <!-- e-mail -->
                 <ul>
                     <li>
                         <h3>E-mail</h3>
                     </li>
                     <li><a href="mailto:info@ttcp.org">info@ttcp.org</a></li>
                 </ul>
-
-
+                <!-- scial media -->
                 <ul>
                     <li>
                         <h3>Sosial media</h3>
                     </li>
                     <li>
+                        <!-- social media links -->
                         <ul class="contact-links-social">
                             <li>
                                 <a href="#">
@@ -319,25 +324,29 @@
                     </li>
                 </ul>
             </div>
+            <!-- form -->
             <div class="contact-form">
                 <!-- CONTACT FORM -->
                 <form action="">
+                    <!-- user name -->
                     <label> Ad
                         <input type="text" id="contact-name">
                     </label>
+                    <!--  user surname -->
                     <label>Soyad
                         <input type="text" id="contact-surname">
                     </label>
+                    <!-- user email -->
                     <label>E-mail
                         <input type="email" id="contact-email">
                     </label>
+                    <!--user message -->
                     <div class="contact-form-message">
                         <label> Mesaj
                             <textarea id="contact-message"></textarea>
                         </label>
                     </div>
-
-
+                    <!-- submit to contact -->
                     <div class="contact-form-submit">
                         <button>
                             Göndər
@@ -347,15 +356,17 @@
                 <!-- CONTACT FORM END -->
             </div>
         </div>
-    </div>
+    </section>
 
     <!-- FOOTER SIDE -->
     <footer>
         <div class="mywrapper myfooter">
+            <!-- footer logo -->
             <div class="footer-logo">
                 <img src="img/footlogo.png" alt="">
             </div>
 
+            <!-- footer contact form -->
             <ul class="footer-contact">
                 <li>
                     <h3>Xəbərlər üçün izləmədə qalın</h3>
@@ -367,21 +378,30 @@
                     </form>
                 </li>
             </ul>
-
+            <!-- footer pages links -->
             <ul class="footer-nav">
-                <li><a href="/">Ana səhifə</a></li>
-                <li><a href="#">Xidmətlər</a></li>
-                <li><a href="#">Xəbərlər</a></li>
-                <li><a href="#">Haqqımızda</a></li>
-                <li><a href="#">Əlaqə</a></li>
+                <li><a href="index.html">Ana səhifə</a></li>
+                <li><a href="patent.html">Xidmətlər</a></li>
+                <li><a href="news.html">Xəbərlər</a></li>
+                <li><a href="abouttotal.html">Haqqımızda</a></li>
+                <li><a href="contact.html">Əlaqə</a></li>
             </ul>
 
+            <!-- footer authorization links -->
             <ul class="footer-links">
-                <li><a href="#">Giriş</a></li>
-                <li><a href="#">Qeydiyyat</a></li>
-                <li><a href="#">FAQs</a></li>
                 <li>
+                    <a href="authorization.html">Giriş</a>
+                </li>
+                <li>
+                    <a href="signup.html">Qeydiyyat</a>
+                </li>
+                <li>
+                    <a href="#">FAQs</a>
+                </li>
+                <li>
+                    <!-- footer social links -->
                     <ul class="footer-links-social">
+                        <!-- facebook -->
                         <li>
                             <a href="#">
                                 <svg width="27" height="27" viewBox="0 0 27 27" fill="none"
@@ -393,6 +413,7 @@
 
                             </a>
                         </li>
+                        <!-- instagram -->
                         <li>
                             <a href="#">
                                 <svg width="27" height="27" viewBox="0 0 27 27" fill="none"
@@ -404,6 +425,7 @@
 
                             </a>
                         </li>
+                        <!-- twitter -->
                         <li>
                             <a href="#">
                                 <svg width="33" height="27" viewBox="0 0 33 27" fill="none"
@@ -418,11 +440,12 @@
                     </ul>
                 </li>
             </ul>
-
+            <!-- footer select language -->
             <div class="footer-lang">
                 <h3>Dil</h3>
 
                 <ul class="footer-select-language">
+                    <!-- rectangle for open or close dropdown -->
                     <span class="open-footer-dropdown">
                         <svg width="9" height="5" viewBox="0 0 9 5" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path
@@ -430,6 +453,7 @@
                                 fill="white" />
                         </svg>
                     </span>
+                    <!-- first language, if user change language give 'selected-lang' for selected li -->
                     <li class="selected-lang">
                         <h2> Azərbaycan dili </h2>
                     </li>
@@ -444,7 +468,9 @@
                 </ul>
             </div>
 
+            <!-- footer social links -->
             <ul class="footer-links-social">
+                <!-- facebook -->
                 <li>
                     <a href="#">
                         <svg width="27" height="27" viewBox="0 0 27 27" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -455,6 +481,7 @@
 
                     </a>
                 </li>
+                <!-- instagram -->
                 <li>
                     <a href="#">
                         <svg width="27" height="27" viewBox="0 0 27 27" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -465,6 +492,7 @@
 
                     </a>
                 </li>
+                <!-- twitter -->
                 <li>
                     <a href="#">
                         <svg width="33" height="27" viewBox="0 0 33 27" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -476,6 +504,7 @@
                     </a>
                 </li>
             </ul>
+
         </div>
     </footer>
     <!-- FOOTER SIDE END -->

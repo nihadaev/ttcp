@@ -34,14 +34,7 @@ a:hover {
     width: 95% !important;
   }
 
-  .about-patent-body img {
-    width: 530px !important;
-  }
-
-  .about-news-body img {
-    width: 530px;
-  }
-
+ 
   .home-apply-content {
     margin-left: 8.3%;
   }
@@ -56,13 +49,6 @@ a:hover {
     width: 97% !important;
   }
 
-  .about-patent-body img {
-    width: 520px !important;
-  }
-
-  .about-news-body img {
-    width: 520px;
-  }
 }
 
 @media screen and (min-width: 1000px) and (max-width: 1099px) {
@@ -74,13 +60,7 @@ a:hover {
     width: 99% !important;
   }
 
-  .about-patent-body img {
-    width: 510px !important;
-  }
 
-  .about-news-body img {
-    width: 510px;
-  }
 }
 
 
@@ -254,13 +234,13 @@ header .header .language .login {
 }
 
 .header .header-login {
-  display: none;
+  display: flex;
   align-items: center;
   position: relative;
 }
 
 .header .header-signup {
-  display: none;
+  display: flex;
   align-items: center;
   position: relative;
 }
@@ -272,7 +252,7 @@ header .header .language .signup {
 }
 
 .header .header-profile {
-  display: flex;
+  display: none;
 }
 .language hr{
   width: 24px;
@@ -1764,13 +1744,19 @@ footer {
   column-gap: 10px;
 }
 
-.patent-filter-menu-body li p .filter-check {
+ .filter-check {
   min-width: 19px;
   min-height: 19px;
   border-radius: 50%;
   background-color: #d9d9d9;
 }
-
+.filter-check.active{
+  background-color: #226AB6 ;
+}
+.patent-filter-modal .filter-check{
+  width: 19px !important;
+  height: 19px !important;
+}
 .patent-filter-menu-body li p span {
   font-size: 14px;
   font-weight: 500;
@@ -1929,7 +1915,7 @@ footer {
 }
 .patent-modal-content-body{
   padding: 0 27px;
-  max-height: 350px;
+  max-height: 270px;
   overflow-y: scroll;
 }
 .patent-modal-content-body li{
@@ -2538,6 +2524,21 @@ footer {
   cursor: pointer;
   transition: .4s;
 }
+.authorization.forget-password-form form .authorization-submit a {
+  display: inline-block !important;
+  background: #FF7F00;
+  border-radius: 5px;
+  padding: 13px 0;
+  width: 309px !important;
+  font-size: 14px !important;
+  font-weight: 500 !important;
+  margin-bottom: 16px !important;
+  color: #fff !important;
+  border: none !important;
+  cursor: pointer;
+  transition: .4s;
+  text-align: center;
+}
 
 .authorization form button:hover {
   background: #FF6B00;
@@ -2879,6 +2880,18 @@ footer {
 .authorization.user-information form label {
   width: 49%;
 }
+.authorization.user-information .select-group{
+  display: none;
+}
+.authorization.user-information .select-group.active{
+  display: inline;
+}
+.authorization.authorization.user-information .selected.active{
+  display: inline;
+}
+.authorization.authorization.user-information .selected{
+  display: none;
+}
 
 @media screen and (max-width: 1050px) {
   header {
@@ -3014,7 +3027,7 @@ footer {
   padding: 20px;
   background-color: #fff;
   z-index: 10;
-  left: 100%;
+  left: 80%;
   display: flex;
   flex-direction: column;
   opacity: 0;
@@ -3075,15 +3088,10 @@ cursor: pointer;
   border-radius: 5px;
 }
 .patent-table .userpatent-svg{
-  width: 21px !important;
-  padding-left: 5px;  
+  width: 77px !important;
+  text-align: center;
 }
-.patent-table .userpatent-svg span{
-  width: 100%;
-}
-.patent-table .userpatent-svg svg{
-  width: 100%;
-}
+
 
 .new-patent-page {
   margin-top: 94px;
@@ -3527,7 +3535,15 @@ cursor: pointer;
   background-color: #fbfbfb;
   overflow-y: scroll;
 }
+.chat-side::-webkit-scrollbar {
+  width: 5px !important;
+  background-color: #f5f5f5 !important;
 
+}
+
+.chat-side::-webkit-scrollbar-thumb {
+  background-color: #c4c4c4 !important;
+}
 .chat-panel {
   width: 100%;
   display: flex;
@@ -3863,4 +3879,39 @@ cursor: pointer;
   font-weight: 500;
   font-size: 14px;
   color: #9f9f9f;
+}
+.footer-lang h2{
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+}
+.footer-lang h3{
+  margin-top: 0 !important;
+}
+
+
+label.wrong{
+  color: #db3236 !important;
+  font-weight: 500 !important;
+}
+input.wrong{
+  border: 2px solid #db3236 !important;
+}
+.wrong-check{
+  display: none;
+  margin-top: 30px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #db3236;
+}
+.wrong-check.active{
+  display: block;
+}
+.password{
+  position: relative;
+}
+.password svg{
+  position: absolute;
+  right: 11px;
+  top: 32px;
+  cursor: pointer;
 }

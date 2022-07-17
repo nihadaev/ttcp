@@ -5,24 +5,24 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TTCP</title>
     <link rel="stylesheet" href="css/style.css">
-    <title>Document</title>
 </head>
 
 <body>
-     <!-- HEADER SIDE -->
+    <!-- HEADER SIDE -->
     <header>
         <!-- logo -->
         <div class="mywrapper header">
             <div class="logo">
-                <a href="/"><img src="img/logo.png" alt="logo"></a>
+                <a href="index.html"><img src="img/logo.png" alt="logo"></a>
             </div>
 
             <!-- NAVBAR -->
             <nav>
                 <!-- page links -->
                 <ul>
-                    <li><a href="/" class="active">Ana səhifə</a></li>
+                    <li><a href="index.html" >Ana səhifə</a></li>
                     <li class="has-dropdown"><a href="">Xidmətlər</a>
                         <div class="kvadrat"></div>
                         <ul class="mydropdown">
@@ -40,11 +40,11 @@
                         </ul>
                     </li>
                     <li><a href="news.html">Xəbərlər</a></li>
-                    <li class="has-dropdown"><a href="abouttotal.html">Haqqımızda</a>
+                    <li class="has-dropdown"><a href="abouttotal.html" class="active">Haqqımızda</a>
                         <div class="kvadrat"></div>
                         <ul class="mydropdown">
                             <li><a href="abouttotal.html">Ümumi</a></li>
-                            <li><a href="aboutmission.html">Missiyamız</a></li>
+                            <li><a href="aboutmission.html" class="active">Missiyamız</a></li>
                             <li><a href="aboutmission2.html">Məqsədimiz</a></li>
                             <li><a href="#">Fəaliyyət sahələrimiz</a></li>
                             <li><a href="#">KOB</a></li>
@@ -169,7 +169,7 @@
             </div>
             <!-- mobile profile menu list -->
             <ul class="mobile-profile-menu-list mywrapper">
-                <li ><a href="userinfo.html">Profil məlumatlarım</a></li>
+                <li><a href="userinfo.html">Profil məlumatlarım</a></li>
                 <li><a href="profilepatent.html">Patent və ixtiralarım</a></li>
                 <li><a href="#">İdeyalarım</a></li>
                 <li><a href="#">İnvestor olduqlarım</a></li>
@@ -187,15 +187,16 @@
 
         <!-- mobile menu -->
         <ul class="mobile-menu">
-            <li class="mobile-menu-services "><a href="#">Xidmətlər <svg class="xidmetler-rectangle" width="13"
-                        height="7" viewBox="0 0 13 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <!-- has dropdown menu -->
+            <li class="mobile-menu-services ">
+                <a href="#">Xidmətlər
+                    <svg class="xidmetler-rectangle" width="13" height="7" viewBox="0 0 13 7" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
                         <path
                             d="M0.184239 0.180905C0.40756 -0.0383737 0.75702 -0.0583081 1.00327 0.121101L1.07383 0.180905L6.5 5.50859L11.9262 0.180905C12.1495 -0.0383737 12.499 -0.0583081 12.7452 0.121101L12.8158 0.180905C13.0391 0.400183 13.0594 0.743318 12.8767 0.985116L12.8158 1.05439L6.94479 6.8191C6.72147 7.03837 6.37201 7.05831 6.12576 6.8789L6.05521 6.8191L0.184239 1.05439C-0.0614131 0.813183 -0.0614131 0.422111 0.184239 0.180905Z"
                             fill="#1C4570" />
                     </svg>
                 </a>
-
-
             </li>
             <!-- services dropdown in mobile menu -->
             <li>
@@ -213,14 +214,17 @@
                 </ul>
             </li>
             <li><a href="news.html">Xəbərlər </a></li>
-            <li class="mobile-menu-about"><a href="#">Haqqımızda
+            <!-- has dropdown menu -->
+            <li class="mobile-menu-about">
+                <a href="#">Haqqımızda
                     <svg class="xidmetler-rectangle" width="13" height="7" viewBox="0 0 13 7" fill="none"
                         xmlns="http://www.w3.org/2000/svg">
                         <path
                             d="M0.184239 0.180905C0.40756 -0.0383737 0.75702 -0.0583081 1.00327 0.121101L1.07383 0.180905L6.5 5.50859L11.9262 0.180905C12.1495 -0.0383737 12.499 -0.0583081 12.7452 0.121101L12.8158 0.180905C13.0391 0.400183 13.0594 0.743318 12.8767 0.985116L12.8158 1.05439L6.94479 6.8191C6.72147 7.03837 6.37201 7.05831 6.12576 6.8789L6.05521 6.8191L0.184239 1.05439C-0.0614131 0.813183 -0.0614131 0.422111 0.184239 0.180905Z"
                             fill="#1C4570" />
                     </svg>
-                </a></li>
+                </a>
+            </li>
             <!-- about dropdown in mobile menu -->
             <li>
                 <ul class="about-dropdown">
@@ -240,52 +244,59 @@
             <li><a href="signup.html" class="mobile-menu-signup">Qeydiyyat</a></li>
         </ul>
     </header>
-
-
     <!-- HEADER SIDE  END-->
 
     <section class="about-content ">
+        <!-- pages links -->
         <div class="page-link-heading mywrapper">
-            <p> <a href="#">Haqqımızda</a> <span><svg width="7" height="13" viewBox="0 0 7 13" fill="none"
-                        xmlns="http://www.w3.org/2000/svg">
+            <!-- about  -->
+            <p>
+                <a href="#">Haqqımızda</a>
+                <!-- rectangle -->
+                <span>
+                    <svg width="7" height="13" viewBox="0 0 7 13" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path
                             d="M0.180905 12.8158C-0.0383737 12.5924 -0.0583081 12.243 0.121101 11.9967L0.180905 11.9262L5.50859 6.5L0.180905 1.07382C-0.0383737 0.850505 -0.0583081 0.501045 0.121101 0.25479L0.180905 0.18424C0.400183 -0.0390806 0.743318 -0.0593824 0.985116 0.123334L1.05439 0.18424L6.8191 6.05521C7.03837 6.27853 7.05831 6.62799 6.8789 6.87424L6.8191 6.94479L1.05439 12.8158C0.813183 13.0614 0.422111 13.0614 0.180905 12.8158Z"
                             fill="#4C4C4C" />
                     </svg>
-                </span> <a href="aboutmission.html">Missiyamız</a> </p>
+                </span> 
+                <!-- mission -->
+                <a href="aboutmission.html">Missiyamız</a>
+            </p>
         </div>
 
+        <!-- banner -->
         <div class="about-content-banner">
             <div class="about-content-banner-content mywrapper">
                 <div class="about-content-banner-text">
+                    <!-- page heading -->
                     <h2 class="headingh2"> Missiyamız</h2>
                 </div>
+                <!-- banner img -->
                 <div class="about-content-banner-img">
                     <img src="img/missionbanner.png" alt="">
                 </div>
             </div>
         </div>
 
+        <!-- about mission text -->
         <div class="mywrapper">
             <ul class="about-content-text">
-
+                <!-- aside img -->
                 <img src="img/mission.png" alt="" class="about-content-banner-text-aside">
 
                 <li>
                     <ul>
+                        <!-- about mission heading -->
                         <li>
-                            <h2>TTCP-nin missiyası
-
-
-                            </h2>
+                            <h2>TTCP-nin missiyası</h2>
                         </li>
-
+                        <!-- about mission content for heading -->
                         <li>
                             <p> Azərbaycanda innovasiya ekosisteminin, o cümlədən intellektual kapitalın və yüksək
                                 texnologiyaların inkişafında davamlılığa nail olmaq, həmçinin bu sahədə qlobal
                                 bazarlarla səmərəli əməkdaşlığı təmin etmək.</p>
                         </li>
-
                     </ul>
                 </li>
 
@@ -298,10 +309,12 @@
     <!-- FOOTER SIDE -->
     <footer>
         <div class="mywrapper myfooter">
+            <!-- footer logo -->
             <div class="footer-logo">
                 <img src="img/footlogo.png" alt="">
             </div>
 
+            <!-- footer contact form -->
             <ul class="footer-contact">
                 <li>
                     <h3>Xəbərlər üçün izləmədə qalın</h3>
@@ -313,21 +326,30 @@
                     </form>
                 </li>
             </ul>
-
+            <!-- footer pages links -->
             <ul class="footer-nav">
-                <li><a href="/">Ana səhifə</a></li>
-                <li><a href="#">Xidmətlər</a></li>
-                <li><a href="#">Xəbərlər</a></li>
-                <li><a href="#">Haqqımızda</a></li>
-                <li><a href="#">Əlaqə</a></li>
+                <li><a href="index.html">Ana səhifə</a></li>
+                <li><a href="patent.html">Xidmətlər</a></li>
+                <li><a href="news.html">Xəbərlər</a></li>
+                <li><a href="abouttotal.html">Haqqımızda</a></li>
+                <li><a href="contact.html">Əlaqə</a></li>
             </ul>
 
+            <!-- footer authorization links -->
             <ul class="footer-links">
-                <li><a href="#">Giriş</a></li>
-                <li><a href="#">Qeydiyyat</a></li>
-                <li><a href="#">FAQs</a></li>
                 <li>
+                    <a href="authorization.html">Giriş</a>
+                </li>
+                <li>
+                    <a href="signup.html">Qeydiyyat</a>
+                </li>
+                <li>
+                    <a href="#">FAQs</a>
+                </li>
+                <li>
+                    <!-- footer social links -->
                     <ul class="footer-links-social">
+                        <!-- facebook -->
                         <li>
                             <a href="#">
                                 <svg width="27" height="27" viewBox="0 0 27 27" fill="none"
@@ -339,6 +361,7 @@
 
                             </a>
                         </li>
+                        <!-- instagram -->
                         <li>
                             <a href="#">
                                 <svg width="27" height="27" viewBox="0 0 27 27" fill="none"
@@ -350,6 +373,7 @@
 
                             </a>
                         </li>
+                        <!-- twitter -->
                         <li>
                             <a href="#">
                                 <svg width="33" height="27" viewBox="0 0 33 27" fill="none"
@@ -364,11 +388,12 @@
                     </ul>
                 </li>
             </ul>
-
+            <!-- footer select language -->
             <div class="footer-lang">
                 <h3>Dil</h3>
 
                 <ul class="footer-select-language">
+                    <!-- rectangle for open or close dropdown -->
                     <span class="open-footer-dropdown">
                         <svg width="9" height="5" viewBox="0 0 9 5" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path
@@ -376,6 +401,7 @@
                                 fill="white" />
                         </svg>
                     </span>
+                    <!-- first language, if user change language give 'selected-lang' for selected li -->
                     <li class="selected-lang">
                         <h2> Azərbaycan dili </h2>
                     </li>
@@ -390,7 +416,9 @@
                 </ul>
             </div>
 
+            <!-- footer social links -->
             <ul class="footer-links-social">
+                <!-- facebook -->
                 <li>
                     <a href="#">
                         <svg width="27" height="27" viewBox="0 0 27 27" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -401,6 +429,7 @@
 
                     </a>
                 </li>
+                <!-- instagram -->
                 <li>
                     <a href="#">
                         <svg width="27" height="27" viewBox="0 0 27 27" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -411,6 +440,7 @@
 
                     </a>
                 </li>
+                <!-- twitter -->
                 <li>
                     <a href="#">
                         <svg width="33" height="27" viewBox="0 0 33 27" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -422,6 +452,7 @@
                     </a>
                 </li>
             </ul>
+
         </div>
     </footer>
     <!-- FOOTER SIDE END -->

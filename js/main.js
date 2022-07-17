@@ -2,10 +2,10 @@
  const mobileopen = document.querySelector('.open-mobile-menu')
  const mobilemenu = document.querySelector('.mobile-menu')
  const body = document.querySelector('body')
- //dropdown services
+ //dropdown services (services in mobile menu)
  const service = document.querySelector('.mobile-menu-services')
  const servicedropdown = document.querySelector('.services-dropdown')
- //dropdown about
+ //dropdown about (about in mobile menu)
  const about = document.querySelector('.mobile-menu-about')
  const aboutdropdown = document.querySelector('.about-dropdown')
 

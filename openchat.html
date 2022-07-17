@@ -3,6 +3,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TTCP</title>
+    <!-- CSS -->
     <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -12,14 +13,14 @@
         <!-- logo -->
         <div class="mywrapper header">
             <div class="logo">
-                <a href="/"><img src="img/logo.png" alt="logo"></a>
+                <a href="index.html"><img src="img/logo.png" alt="logo"></a>
             </div>
 
             <!-- NAVBAR -->
             <nav>
                 <!-- page links -->
                 <ul>
-                    <li><a href="/" class="active">Ana səhifə</a></li>
+                    <li><a href="index.html" class="active">Ana səhifə</a></li>
                     <li class="has-dropdown"><a href="">Xidmətlər</a>
                         <div class="kvadrat"></div>
                         <ul class="mydropdown">
@@ -237,15 +238,16 @@
             <li><a href="signup.html" class="mobile-menu-signup">Qeydiyyat</a></li>
         </ul>
     </header>
-
-
     <!-- HEADER SIDE  END-->
 
     <!-- Messages side -->
     <section class="open-chat-page">
         <div class="all-messages">
+            <!-- search chat -->
             <div class="chat-search">
+                <!-- search chat form -->
                 <form>
+                    <!-- search chat input -->
                     <label>
                         <input type="text" placeholder="Axtarın">
                         <svg width="19" height="20" viewBox="0 0 19 20" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -253,7 +255,6 @@
                                 d="M9.5495 0.947266C14.3638 0.947266 18.2797 4.86324 18.2797 9.67751C18.2797 11.9489 17.4081 14.0205 15.9817 15.5752L18.7884 18.3761C19.0511 18.6388 19.052 19.0637 18.7893 19.3264C18.6584 19.4591 18.4854 19.5245 18.3133 19.5245C18.142 19.5245 17.9699 19.4591 17.8381 19.3282L14.9975 16.4955C13.5032 17.6922 11.6085 18.4087 9.5495 18.4087C4.73523 18.4087 0.818359 14.4918 0.818359 9.67751C0.818359 4.86324 4.73523 0.947266 9.5495 0.947266ZM9.5495 2.29204C5.47664 2.29204 2.16313 5.60465 2.16313 9.67751C2.16313 13.7504 5.47664 17.0639 9.5495 17.0639C13.6215 17.0639 16.935 13.7504 16.935 9.67751C16.935 5.60465 13.6215 2.29204 9.5495 2.29204Z"
                                 fill="#CBCBCB" />
                         </svg>
-
                     </label>
                 </form>
             </div>
@@ -664,7 +665,7 @@
         <div class="chat-side">
             <!-- back to select chat -->
             <ul class="chat-select">
-                
+                <!-- link to back for all chats -->
                 <li class="back-for-select">
                     <a href="mailbox.html">
                         <svg width="10" height="17" viewBox="0 0 10 17" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -675,11 +676,15 @@
                     </a>
                 </li>
                 <li>
+                    <!-- companion avatar -->
                     <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M23.7534 0C36.8728 0 47.5069 10.6356 47.5069 23.7535C47.5069 36.8729 36.8728 47.5069 23.7534 47.5069C10.634 47.5069 0 36.8728 0 23.7535C0 10.6356 10.6341 0 23.7534 0Z" fill="#92C1E9"/>
-                        </svg>
-                        
+                        <path
+                            d="M23.7534 0C36.8728 0 47.5069 10.6356 47.5069 23.7535C47.5069 36.8729 36.8728 47.5069 23.7534 47.5069C10.634 47.5069 0 36.8728 0 23.7535C0 10.6356 10.6341 0 23.7534 0Z"
+                            fill="#92C1E9" />
+                    </svg>
+
                 </li>
+                <!-- companion name -->
                 <li>
                     <h3>Rəşad Abdulov</h3>
                 </li>
@@ -749,25 +754,136 @@
                     <input type="file">
                 </label>
                 <div class="send-message-div">
-                     <!-- message text -->
-                <label class="message-text">
-                    <input type="text" placeholder="Mesaj yazın">
-                </label>
-                <!-- submit send message -->
-                <button class="send-message">
-                    <svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path
-                            d="M21.8893 1.13318C21.7071 0.95078 21.4334 0.894663 21.1942 0.990526L0.4833 9.27481C0.246284 9.36956 0.0876004 9.59527 0.078534 9.85034C0.0694676 10.1054 0.21178 10.3418 0.441362 10.4531L8.6083 14.4141L12.5692 22.5811C12.6773 22.8038 12.9029 22.9443 13.149 22.9443C13.1567 22.9443 13.1644 22.9442 13.1721 22.9439C13.4271 22.9348 13.6528 22.7762 13.7476 22.5392L22.032 1.82833C22.1278 1.58895 22.0717 1.3155 21.8893 1.13318Z"
-                            fill="#7C7C7C" />
-                    </svg>
-                </button>
+                    <!-- message text -->
+                    <label class="message-text">
+                        <input type="text" placeholder="Mesaj yazın">
+                    </label>
+                    <!-- submit send message -->
+                    <button class="send-message">
+                        <svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M21.8893 1.13318C21.7071 0.95078 21.4334 0.894663 21.1942 0.990526L0.4833 9.27481C0.246284 9.36956 0.0876004 9.59527 0.078534 9.85034C0.0694676 10.1054 0.21178 10.3418 0.441362 10.4531L8.6083 14.4141L12.5692 22.5811C12.6773 22.8038 12.9029 22.9443 13.149 22.9443C13.1567 22.9443 13.1644 22.9442 13.1721 22.9439C13.4271 22.9348 13.6528 22.7762 13.7476 22.5392L22.032 1.82833C22.1278 1.58895 22.0717 1.3155 21.8893 1.13318Z"
+                                fill="#7C7C7C" />
+                        </svg>
+                    </button>
                 </div>
             </form>
 
         </div>
     </section>
 
-    <script src="js/main.js"></script>
+    <!-- JS -->
+    <script>
+        // mobile menu elements
+        const mobileopen = document.querySelector('.open-mobile-menu')
+        const mobilemenu = document.querySelector('.mobile-menu')
+        const body = document.querySelector('body')
+        //dropdown services (services in mobile menu)
+        const service = document.querySelector('.mobile-menu-services')
+        const servicedropdown = document.querySelector('.services-dropdown')
+        //dropdown about (about in mobile menu)
+        const about = document.querySelector('.mobile-menu-about')
+        const aboutdropdown = document.querySelector('.about-dropdown')
+
+        // open profile menu elements
+        const openprofile = document.querySelector('.open-profile-menu')
+        const profilemenu = document.querySelector('.mobile-profile-menu')
+
+
+        // open profile menu event
+        openprofile.addEventListener('click', (event) => {
+            event.stopPropagation()
+
+            if (body.classList.contains('overflowHIDDEN') && profilemenu.classList.contains('active')) {
+                body.classList.remove('overflowHIDDEN')
+            } else {
+                body.classList.add('overflowHIDDEN')
+            }
+
+
+            // open profile menu
+            profilemenu.classList.toggle('active')
+
+
+            // close mobile menu if it opened
+            if (mobilemenu.classList.contains('active')) {
+                mobilemenu.classList.remove('active')
+                mobileopen.classList.remove('activated')
+            }
+
+
+        })
+
+        profilemenu.addEventListener('click', (event) => {
+            event.stopPropagation()
+        })
+
+        // mobile menu
+        mobileopen.addEventListener('click', (event) => {
+            event.stopPropagation()
+
+            if (body.classList.contains('overflowHIDDEN') && mobilemenu.classList.contains('active')) {
+                body.classList.remove('overflowHIDDEN')
+            } else {
+                body.classList.add('overflowHIDDEN')
+            }
+            // open mobile menu
+            mobileopen.classList.toggle('activated')
+            mobilemenu.classList.toggle('active')
+            // stop scroll outside mobile menu
+
+            // close service dropdown when user closed mobile menu
+            if (service.classList.contains('active')) {
+                service.classList.remove('active')
+                servicedropdown.classList.remove('active')
+            }
+            // close about dropdown when user closed mobile menu
+            if (about.classList.contains('active')) {
+                about.classList.remove('active')
+                aboutdropdown.classList.remove('active')
+            }
+            if (profilemenu.classList.contains('active')) {
+                profilemenu.classList.remove('active')
+            }
+
+
+        })
+        // on click on header side or body side close mobile menu and profile menu
+        window.addEventListener('click', () => {
+            mobilemenu.classList.remove('active')
+            mobileopen.classList.remove('activated')
+            profilemenu.classList.remove('active')
+
+        })
+        mobilemenu.addEventListener('click', (event) => {
+            event.stopPropagation()
+        })
+
+
+
+
+        //  service dropdown open
+        service.addEventListener('click', () => {
+            service.classList.toggle('active')
+            servicedropdown.classList.toggle('active')
+            // close about dropdown if it open when user try to open service dropdown
+            if (about.classList.contains('active')) {
+                about.classList.remove('active')
+                aboutdropdown.classList.remove('active')
+            }
+        })
+        // about dropdown open
+        about.addEventListener('click', () => {
+            about.classList.toggle('active')
+            aboutdropdown.classList.toggle('active')
+            // close service dropdown if it open when user try to open about dropdown
+            if (service.classList.contains('active')) {
+                service.classList.remove('active')
+                servicedropdown.classList.remove('active')
+            }
+        })
+
+    </script>
 
 </body>
 
